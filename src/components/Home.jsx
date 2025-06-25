@@ -13,7 +13,7 @@ const Home = () => {
     heading: 'Your Heading',
     description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
     extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
-    image: '/image/frame01.png'
+    image: '/image/Frame01.png'
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const Home = () => {
     heading: 'Tower',
     description: 'Learn to use the tower system effectively with expert guidance.',
     extra: 'Tower classes help build core strength, stability, and form.',
-    image: '/image/frame02.png'
+    image: '/image/Frame02.png'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const Home = () => {
     heading: 'Reformer',
     description: 'Learn to use the tower system effectively with expert guidance.',
     extra: 'Tower classes help build core strength, stability, and form.',
-    image: '/image/frame03.png'
+    image: '/image/Frame03.png'
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const Home = () => {
     heading: 'Mens Power',
     description: 'Learn to use the tower system effectively with expert guidance.',
     extra: 'Tower classes help build core strength, stability, and form.',
-    image: '/image/frame05.png'
+    image: '/image/Frame05.png'
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const Home = () => {
     heading: 'Private',
     description: 'Learn to use the tower system effectively with expert guidance.',
     extra: 'Tower classes help build core strength, stability, and form.',
-    image: '/image/frame06.png'
+    image: '/image/Frame06.png'
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const Home = () => {
     heading: 'Duet',
     description: 'Learn to use the tower system effectively with expert guidance.',
     extra: 'Tower classes help build core strength, stability, and form.',
-    image: '/image/frame07.png'
+    image: '/image/Frame07.png'
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ const Home = () => {
     heading: 'Pre & Post Natal',
     description: 'Learn to use the tower system effectively with expert guidance.',
     extra: 'Tower classes help build core strength, stability, and form.',
-    image: '/image/frame08.png'
+    image: '/image/Frame08.png'
   },
   // Add more items as needed...
 ];

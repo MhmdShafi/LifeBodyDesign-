@@ -62,10 +62,10 @@ const Carousel = ({ items }) => {
       {/* Prev/Next Buttons */}
       <div className='w-[80px] h-[5px] gap-[8px] -translate-y-[60px] flex mx-auto'>
         <button onClick={handlePrev} className='w-[68px] h-[30px] rounded-[16px] bg-[#EAE8E2]'>
-          <img src="/image/previous.png" alt="Previous" />
+          <img src="/image/Previous.png" alt="Previous" />
         </button>
         <button onClick={handleNext} className='w-[68px] h-[30px] rounded-[30px] bg-[#EAE8E2]'>
-          <img src="/image/next.png" alt="Next" />
+          <img src="/image/Next.png" alt="Next" />
         </button>
       </div>
     </div>

@@ -5,7 +5,7 @@ const Footer = () => {
      <footer className="relative w-full h-[444px] -mt-[1250px] bg-[#D4D4D4] ">
         {/* Background image */}
         <img
-          src="/image/footer.jpg"
+          src="/image/Footer.jpg"
           alt="Footer Background"
           className="opacity-[20%] absolute top-0 left-0 w-full h-full object-cover opacity-90"
         />
