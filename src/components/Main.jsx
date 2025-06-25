@@ -7,7 +7,7 @@ import Footer from './Footer'
 const Mian = ({ items, dropDownItems }) => {
   return (
     <div className=''>
-      <img className='opacity-20 w-full h-full object-cover  -translate-y-[120px]' src="/public/image/bg-image.jpg" alt="image" />
+      <img className='opacity-20 w-full h-full object-cover  -translate-y-[120px]' src="/image/bg-image.jpg" alt="image" />
       <div className="w-full overflow-hidden px-4 -translate-y-[650px]">
         <h1 className="font-ivy font-normal text-[20vw] leading-[1] text-center uppercase opacity-5 whitespace-nowrap">
           Lifebody
@@ -34,7 +34,7 @@ const Mian = ({ items, dropDownItems }) => {
         <div className=" w-[329px] h-[100px] flex flex-col items-center gap-[20px] pl-[630px] -translate-y-[190px] text-center">
           {/* Icon Frame */}
           <div className="w-[30px] h-[30px] flex items-center justify-center">
-            <img src="/public/image/Frame.png" alt="img" />
+            <img src="/image/frame.png" alt="img" />
           </div>
 
           {/* Text */}
@@ -56,8 +56,8 @@ const Mian = ({ items, dropDownItems }) => {
         <div className="w-[756px] h-[200px] pt-[24px] pr-[48px] pb-[10px] rounded-[16px] border border-solid border-gray-300 flex flex-col items-center justify-center gap-[8px]">
 
           <div className="w-[44px] h-[44px]">
-            <img src="/public/image/Vector_1.png" alt="Find Us Icon" />
-            <img src="/public/image/Vector.png" alt="icon" className="pl-[9px] pt-[-5px] -translate-y-[200%]" />
+            <img src="/image/vector_1.png" alt="Find Us Icon" />
+            <img src="/image/vector.png" alt="icon" className="pl-[9px] pt-[-5px] -translate-y-[200%]" />
           </div>
 
 
@@ -87,9 +87,9 @@ const Mian = ({ items, dropDownItems }) => {
 
         <div className="w-[756px] h-[200px] pt-[24px]  pb-[10px]  rounded-[16px] border border-solid border-gray-300">
           <div className="w-[44px] h-[44px] mx-auto">
-            <img src="/public/image/Frame_1.png" alt="Find Us Icon" />
-            <img src="/public/image/Vector_3.png" alt="icon" className="h-[2px] pl-[20px] pt-[-5px] -translate-y-[220%]" />
-            <img src="/public/image/Vector_4.png" alt="icon" className=" pl-[12px] pt-[-5px] -translate-y-[667%]" />
+            <img src="/image/frame_1.png" alt="Find Us Icon" />
+            <img src="/image/vector_3.png" alt="icon" className="h-[2px] pl-[20px] pt-[-5px] -translate-y-[220%]" />
+            <img src="/image/vector_4.png" alt="icon" className=" pl-[12px] pt-[-5px] -translate-y-[667%]" />
           </div>
 
 

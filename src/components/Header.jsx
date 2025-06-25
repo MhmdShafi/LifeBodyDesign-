@@ -7,7 +7,7 @@ const Header = () => {
             {/* Left section - logo */}
             <div className="w-[162.92px] h-[64px] m-0 p-0 pr-[20px]  flex items-center">
                 <img
-                    src="/image/logo.png" // If it's in public/, don't include "public" in the path
+                    src="/image/logo.png" 
                     alt="Logo"
                     className="w-full h-full object-contain"
                 />

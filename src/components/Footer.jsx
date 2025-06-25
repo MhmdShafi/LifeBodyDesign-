@@ -5,7 +5,7 @@ const Footer = () => {
      <footer className="relative w-full h-[444px] -mt-[1250px] bg-[#D4D4D4] ">
         {/* Background image */}
         <img
-          src="/public/image/Footer.jpg"
+          src="/image/footer.jpg"
           alt="Footer Background"
           className="opacity-[20%] absolute top-0 left-0 w-full h-full object-cover opacity-90"
         />
@@ -57,7 +57,7 @@ const Footer = () => {
             <div className="w-[1000px] h-[1px] bg-[#737373] my-1 -mt-[12px] -ml-[150px]"></div>
 
             {/* Footer bottom links */}
-            <div className=" text-xs text-[#737373]">
+            <div className=" text-xs text-[#737373] pt-[20px]">
               © 2010 — 2020 &nbsp;&nbsp; Privacy — Terms
             </div>
           

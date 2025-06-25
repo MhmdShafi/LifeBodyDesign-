@@ -14,7 +14,7 @@ const CardSection = () => {
           {/* Card 1 */}
           <div className='w-1/3  p-0 '>
             <img
-              src='/public/image/Rectangle1.png'
+              src='/image/rectangle1.png'
               alt='James Carter'
               className='w-full h-auto rounded-none'
             />
@@ -27,7 +27,7 @@ const CardSection = () => {
           {/* Card 2 */}
           <div className='w-1/3  p-0 '>
             <img
-              src='/public/image/Rectangle2.png'
+              src='/image/rectangle2.png'
               alt='James Carter'
               className='w-full h-auto rounded-none'
             />
@@ -40,7 +40,7 @@ const CardSection = () => {
           {/* Card 3 */}
           <div className='w-1/3  p-0 '>
             <img
-              src='/public/image/Rectangle3.png'
+              src='/image/rectangle3.png'
               alt='James Carter'
               className='w-full h-auto rounded-none'
             />
@@ -55,10 +55,10 @@ const CardSection = () => {
 
          <div className='w-[80px] h-[5px] gap-[8px]  flex mx-auto'>
         <button className='w-[68px] h-[30px] rounded-[16px] bg-[#EAE8E2]'>
-          <img src="/public/image/Previous.png" alt="Previous" />
+          <img src="/image/previous.png" alt="Previous" />
         </button>
         <button className='w-[68px] h-[30px] rounded-[30px] bg-[#EAE8E2]'>
-          <img src="/public/image/Next.png" alt="Next" />
+          <img src="/image/next.png" alt="Next" />
         </button>
       </div>
       </div>
