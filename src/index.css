@@ -1,0 +1,12 @@
+@font-face{
+  font-family: Ivy Mode;
+  src:url("../public/fonts/ivy-mode-regular.ttf");
+  font-family:TT Commons;
+}
+
+@import "tailwindcss";
+
+@theme{
+  --font-ivy:Ivy-Mode,"sans-sarif";
+  --font-tt:TT-Commons,"sans-sarif";
+}
