@@ -2,67 +2,76 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
-     <footer className="relative w-full h-[444px] -mt-[1250px] bg-[#D4D4D4] ">
-        {/* Background image */}
-        <img
-          src="/image/Footer.jpg"
-          alt="Footer Background"
-          className="opacity-[20%] absolute top-0 left-0 w-full h-full object-cover opacity-90"
-        />
+    <footer className="relative w-[1920px] h-[644px] gap-[96px] pt-[96px] pr-[192px] pb-[24px] pl-[192px] border-t flex flex-col items-center justify-center
+ ">
+      {/* Background image */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+    <img
+      src="/image/Footer.jpg"
+      alt="Footer Background"
+      className="w-full h-full object-cover opacity-[20%]"
+    />
+  </div>
+      {/* Overlay content */}
+      <div className="w-[935px] h-[264px] gap-[32px] flex flex-col items-center">
 
-        {/* Overlay content */}
-        <div className="relative z-10 w-full h-full flex flex-col items-center justify-center text-center text-[#262626] px-4">
+        {/* Heading */}
+        <h2 className="w-[378px] h-[76px] font-ivy font-normal text-[56px] leading-[135%] tracking-[0] text-center text-[#474747]">
+          Ready to Build?
+        </h2>
 
-          {/* Heading */}
-          <h2 className="font-ivy font-normal text-[44px] text-4xl font-light mb-4">Ready to Build?</h2>
+        {/* Subheading */}
+        <p className="w-[935px] h-[72px] font-tt font-normal text-[24px] leading-[150%] tracking-[0] text-center mt-[16px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
 
-          {/* Subheading */}
-          <p className="font-tt font-normal text-[16px] max-w-xl text-base text-[#4B4B4B] mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+        {/* Button */}
+        <button className="w-[159px] h-[68px] gap-[10px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] justify-center rounded-[8px] text-white bg-[#474747]">
+          <Link>Book Now</Link>
+        </button>
+      </div>
 
-          {/* Button */}
-          <button className="bg-[#333333] text-white px-6 py-3 rounded-md text-sm mb-10">
-            <Link>Book Now</Link>
-          </button>
-          {/* Nav links */}
-          <div className="flex justify-between items-center w-[700px] mb-4">
-            {/* Left nav */}
-            <div className="flex gap-8 text-[10px]  font-tt font-normal -ml-[110px]">
-              <Link className="hover:underline">PRODUCT</Link>
-              <Link className="hover:underline">FEATURES</Link>
-              <Link className="hover:underline">RESOURCES</Link>
-            </div>
-            {/* Logo Section */}
-            <div className="flex items-center ml-[100px] mr-[80px]">
-              {/* Logo */}
-              <div className="w-[162.92px] h-[64px] mb-2 pl-[20px] pr-[20px]">
-                <img
-                  src="/image/logo.png"
-                  alt="Logo"
-                  className="w-full h-full object-contain black"
-                />
-              </div>
+      {/* Nav links */}
+      <div className='w-[1536px] h-[164px] gap-[32px]'>
+       <div className="w-[1536px] h-[164px] gap-[32px]">
+  <div className="flex justify-between items-center mb-4">
+    {/* Left nav */}
+    <div className="w-[336px] h-[30px] gap-[32px] ml-[215px] flex">
+      <Link className="w-[83px] h-[30px] font-tt font-medium text-[20px] uppercase">PRODUCT</Link>
+      <Link className="w-[83px] h-[30px] font-tt font-medium text-[20px] uppercase mr-[32px] ml-[32px]">FEATURES</Link>
+      <Link className="w-[83px] h-[30px] font-tt font-medium text-[20px] uppercase">RESOURCES</Link>
+    </div>
 
-            </div>
-            {/* Right nav */}
-            <div className="flex gap-8 text-[10px] font-tt font-normal">
-              <Link className="hover:underline">ABOUT</Link>
-              <Link className="hover:underline">BLOG</Link>
-              <Link className="hover:underline">SUPPORT</Link>
-            </div>
-          </div>
-           
-            {/* Separator line */}
-            <div className="w-[1000px] h-[1px] bg-[#737373] my-1 -mt-[12px] -ml-[150px]"></div>
+    {/* Logo */}
+    <div className="w-[193px] h-[76px]">
+      <img
+        src="/image/logo.png" // Make sure this path is correct and file exists!
+        alt="Logo"
+        className="w-[193px] h-[76px] object-contain"
+      />
+    </div>
 
-            {/* Footer bottom links */}
-            <div className=" text-xs text-[#737373] pt-[20px]">
-              © 2010 — 2020 &nbsp;&nbsp; Privacy — Terms
-            </div>
-          
+    {/* Right nav */}
+    <div className="w-[249px] h-[30px] gap-[32px] mr-[259px] flex ">
+      <Link className="w-[58px] h-[30px] font-tt font-medium text-[20px] uppercase">ABOUT</Link>
+      <Link className="w-[48px] h-[30px] font-tt font-medium text-[20px] uppercase ml-[32px] mr-[32px]">BLOG</Link>
+      <Link className="w-[79px] h-[30px] font-tt font-medium text-[20px] uppercase">SUPPORT</Link>
+    </div>
+  </div>
+
+
+
+        {/* Separator line */}
+        <div className="mt-[32px] w-[1536px] border bg-[#737373]"></div>
+
+        {/* Footer bottom links */}
+        <div className="ml-[600px] mt-[32px] mb-[24px] w-[223px] h-[24px] gap-[24px] whitespace-nowrap item-center">
+          © 2010 — 2020 &nbsp;&nbsp; Privacy — Terms
         </div>
-      </footer>
+
+      </div>
+      </div>
+    </footer>
   )
 }
 

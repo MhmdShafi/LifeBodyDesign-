@@ -11,15 +11,17 @@ const DropdownBtns = ({ items }) => {
   };
 
   return (
-    <div className='w-full h-auto pt-[70px] pr-[192px] rounded shadow border border-gray-300 bg-white pb-[20px] -translate-y-[1130px] pl-[250px]'>
+    <div className='w-[1920px] h-[658px] gap-[40px] pt-[96px] pr-[192px] pb-[96px] pl-[192px] '>
       {items.map((section, index) => (
-        <div key={index} className='mb-6'>
+        <div key={index}>
           {/* Main box */}
-          <div className='w-[900px] rounded shadow border border-gray-300 p-6 text-center'>
-            <h2 className='font-ivy text-[20px] uppercase mb-2'>{section.title}</h2>
+          <div className='w-[1536px] h-[213px] gap-[16px] rounded-[16px] border p-[48px] flex flex-col items-center justify-center mb-[10px]'>
+            <h2 className='font-ivy font-normal text-[48px] leading-[135%] tracking-[0] w-[345px] h-[65px] text-center whitespace-nowrap'>
+              {section.title}
+            </h2>
             <Link
               onClick={() => toggleDropdown(index)}
-              className='font-tt text-[16px] cursor-pointer text-blue-600 block mb-2'
+              className='font-tt font-normal text-[24px] leading-[150%] tracking-[0] w-[306px] h-[36px] text-center text-blue-600 cursor-pointer whitespace-nowrap'
             >
               {activeIndex === index
                 ? `Exploring ${section.title.toLowerCase()}`
@@ -27,28 +29,33 @@ const DropdownBtns = ({ items }) => {
             </Link>
           </div>
 
+
           {/* Dropdown items */}
           {activeIndex === index && (
             <>
-              {section.items.map((item) => (
-                <div
-                  key={item.id}
-                  className='w-[900px] mt-4 mb-4 rounded shadow border border-gray-300 bg-gray-100 p-4 flex justify-between'
-                >
-                  <div className='w-1/5 font-ivy font-normal text-[24px] text-left uppercase'>
-                    {item.title}
-                  </div>
-                  <div className='w-3/5 p-0 m-0 pl-[60px] text-sm text-gray-700 text-left'>
-                    {item.description}
-                  </div>
-                  <div className='w-1/5 text-right text-blue-800 font-ivy font-normal text-[24px]'>
-                    {item.price}
-                  </div>
-                </div>
-              ))}
+              {section.items.map((item, i) => (
+  <div key={item.id}>
+    {/* Dropdown item row */}
+    <div className="flex w-[1536px] min-h-[135px] gap-[48px] pt-[24px] pr-[32px] pb-[24px] pl-[32px] rounded-[16px] bg-white">
+      <div className="font-ivy font-normal text-[32px] leading-[135%] tracking-[0] align-middle">
+        {item.title}
+      </div>
+      <div className="w-[935px] font-tt font-normal text-[24px] leading-[120%] tracking-[0]">
+        {item.description}
+      </div>
+      <div className="w-[181px] h-[54px] font-tt font-semibold text-[40px] leading-[135%] tracking-[0] text-center align-middle">
+        {item.price}
+      </div>
+    </div>
+
+    {/* Divider line */}
+    <div className="w-[1536px] h-[1px] bg-[#C0C0C0] my-[8px]"></div>
+  </div>
+))}
+
 
               {/* Show Less Link */}
-              <div className='w-[900px] text-center'>
+              <div className='w-[1536px] h-[213px] gap-[64px]'>
                 <Link
                   onClick={() => setActiveIndex(null)}
                   className='text-blue-600 text-sm font-tt underline cursor-pointer'

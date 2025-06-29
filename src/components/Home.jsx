@@ -106,7 +106,7 @@ const Home = () => {
     }
   ];
   return (
-    <div className="absolute w-[100%] h-[1080px] bg-gray-100  m-0 p-0">
+    <div className="w-[1920px] h-[1080px]">
      
         <Header />
         <Mian items={classData} dropDownItems={dropdownItems }/>

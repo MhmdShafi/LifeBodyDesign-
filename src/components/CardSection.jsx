@@ -2,62 +2,77 @@ import React from 'react'
 
 const CardSection = () => {
   return (
-     <div className='w-full h-[800px]  pt-[50px] -translate-y-[1130px] bg-[#FAFAF5]'>
-        <div className='w-[400px] h-[100px] pl-[40px] pt-[10px]  gap-[2px] mx-auto'>
-          <h1 className='font-ivy font-normal text-[24px] w-[603px] h-[40px] pl-[30px]'>Your LIFEBODY Teachers </h1>
-          <p className='w-[400px] h-[16px] text-[10px] font-tt font-normal  pl-[50px] pb-[200px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+     <div className='w-[1920px] h-[1101px] gap-[64px] pt-[96px] pr-[192px] pb-[96px] pl-[192px]bg-[#FAFAF5] '>
+        <div className='w-[603px] h-[128px] gap-[16px] mx-auto whitespace-nowrap'>
+          <h1 className='w-[603px] h-[76px] font-ivy font-normal text-[56px] leading-[135%] tracking-[0] text-center align-middle'>Your LIFEBODY Teachers </h1>
+          <p className='w-[518px] h-[36px] font-tt font-normal text-[24px] leading-[150%] tracking-[0]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
         </div>
 
         
 
-        <div className='w-[950px] h-[435px]  mx-auto mt-[30px]  flex justify-between p-6 gap-4'>
+        <div className='w-[1278px] h-[585px] gap-[48px]  ml-[321px] mb-[28px] mr-[321] flex'>
           {/* Card 1 */}
-          <div className='w-1/3  p-0 '>
+          <div className='w-[394px] h-[585px] gap-[24px]'>
             <img
               src='/image/Rectangle1.png'
               alt='James Carter'
-              className='w-full h-auto rounded-none'
+              className='w-[394px] h-[394px] rounded-[16px]
+'
             />
-            <h2 className='text-lg font-ivy font-normal mx-left mb-1 mt-[10px] pl-[3px]'>Hanna Rosser</h2>
-            <p className='text-[13px] text-gray-600 font-tt font-normal pl-[3px]'>
+            <div className='w-[394px] h-[167px] gap-[16px] mt-[24px]'>
+               <h2 className='w-[394px] h-[43px] font-ivy font-normal text-[32px] leading-[135%] tracking-[0] align-middle'>Hanna Rosser</h2>
+            <p className='w-[394px] h-[108px] font-tt font-normal text-[24px] leading-[150%] tracking-[0]
+'>
               Expert in frontend development, specializing in React and UI animations.
             </p>
+            </div>
+           
           </div>
 
           {/* Card 2 */}
-          <div className='w-1/3  p-0 '>
+          <div className='w-[394px] h-[585px] gap-[24px]'>
             <img
               src='/image/Rectangle2.png'
               alt='James Carter'
-              className='w-full h-auto rounded-none'
+              className='w-[394px] h-[394px] rounded-[16px]
+'
             />
-            <h2 className='text-lg font-ivy font-normal mx-left mb-1 mt-[10px] pl-[3px]'>Carla Calzoni</h2>
-            <p className='text-[13px] text-gray-600 font-tt font-normal pl-[3px]'>
+            <div className='w-[394px] h-[167px] gap-[16px] mt-[24px]'>
+              <h2 className='w-[394px] h-[43px] font-ivy font-normal text-[32px] leading-[135%] tracking-[0] align-middle'>Carla Calzoni</h2>
+            <p className='w-[394px] h-[108px] font-tt font-normal text-[24px] leading-[150%] tracking-[0]
+'>
               Expert in frontend development, specializing in React and UI animations.
             </p>
+            </div>
+            
           </div>
 
           {/* Card 3 */}
-          <div className='w-1/3  p-0 '>
+          <div className='w-[394px] h-[585px] gap-[24px]'>
             <img
               src='/image/Rectangle3.png'
               alt='James Carter'
-              className='w-full h-auto rounded-none'
+              className='w-[394px] h-[394px] rounded-[16px]
+'
             />
-            <h2 className='text-lg font-ivy font-normal mx-left mb-1 mt-[10px] pl-[3px]'>Adison Herwitz</h2>
-            <p className='text-[13px] text-gray-600 font-tt font-normal pl-[3px]'>
+            <div className='w-[394px] h-[167px] gap-[16px] mt-[24px]'>
+              <h2 className='w-[394px] h-[43px] font-ivy font-normal text-[32px] leading-[135%] tracking-[0] align-middle'>Adison Herwitz</h2>
+            <p className='w-[394px] h-[108px] font-tt font-normal text-[24px] leading-[150%] tracking-[0]
+'>
               Expert in frontend development, specializing in React and UI animations.
             </p>
+            </div>
+            
           </div>
 
         </div>
 
 
-         <div className='w-[80px] h-[5px] gap-[8px]  flex mx-auto'>
-        <button className='w-[68px] h-[30px] rounded-[16px] bg-[#EAE8E2]'>
+         <div className='w-[176px] h-[108px] gap-[10px] mb-[96px] flex mx-auto'>
+        <button className='w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2]'>
           <img src="/image/Previous.png" alt="Previous" />
         </button>
-        <button className='w-[68px] h-[30px] rounded-[30px] bg-[#EAE8E2]'>
+        <button className='w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2]'>
           <img src="/image/Next.png" alt="Next" />
         </button>
       </div>

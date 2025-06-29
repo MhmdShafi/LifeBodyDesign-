@@ -3,51 +3,53 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-<header className="z-[10] relative m-0 w-full h-[58px] px-[192px] py-[40px] flex items-center justify-between bg-white text-black">
+   <header className="w-[1920px] h-[88px] bg-white flex ">
             {/* Left section - logo */}
-            <div className="w-[162.92px] h-[64px] m-0 p-0 pr-[20px]  flex items-center">
+            
                 <img
                     src="/image/logo.png" 
                     alt="Logo"
-                    className="w-full h-full object-contain"
+                    className="w-[162.92px] h-[64px] ml-[192px] mt-[12px]"
                 />
-            </div>
+            
 
             {/* Center section - navigation links */}
-            <nav className="hidden md:flex items-center pr-[20px] pl-[10px] w-[650px] h-[27px] gap-[32px] ">
+            <nav className=" w-[650px] h-[27px]  mt-[30.5px] mr-[223.54px] ml-[223.5px] gap-[32px] flex item-center">
                 <Link
                     to="#"
-                    className="font-tt text-[12px] leading-[18px] font-medium uppercase text-black align-middle"
+                    className="font-tt font-medium  text-[18px] leading-[150%] tracking-normal align-middle  flex uppercase"
+
                 >
                     ABOUT
                 </Link>
                 <Link
                     to="#"
-                    className="font-tt text-[12px] leading-[18px] font-medium uppercase text-black align-middle"
+                    className="w-[53px] h-[27px] font-tt font-medium  text-[18px] leading-[150%] tracking-normal align-middle  flex uppercase"
                 >
                     STUDIO
                 </Link>
                 <Link
                     to="#"
-                    className="font-tt text-[12px] leading-[18px] font-medium uppercase text-black align-middle"
+                    className="w-[56px] h-[27px] font-tt font-medium w-[143px] h-[27px]  text-[18px] leading-[150%] tracking-normal align-middle whitespace-nowrap uppercase"
                 >
-                    TIMETABLE/BOOK
+                    TIMETABLE/ BOOK
                 </Link>
                 <Link
-                    to="#"
-                    className="font-tt text-[12px] leading-[18px] font-medium uppercase text-black align-middle"
-                >
-                    ON DEMAND
-                </Link>
+  to="#"
+  className="w-[94px] h-[27px] font-tt font-medium text-[18px] leading-[150%] tracking-normal align-middle uppercase whitespace-nowrap"
+>
+  on demand
+</Link>
+
                 <Link
                     to="#"
-                    className="font-tt text-[12px] leading-[18px] font-medium uppercase text-black align-middle"
+                    className="w-[87px] h-[27px] font-tt font-medium  text-[18px] leading-[150%] tracking-normal align-middle  flex uppercase"
                 >
                     PROGRAMS
                 </Link>
                 <Link
                     to="#"
-                    className="font-tt text-[12px] leading-[18px] font-medium uppercase text-black align-middle"
+                    className="w-[57px] h-[27px] font-tt font-medium  text-[18px] leading-[150%] tracking-normal align-middle uppercase"
                 >
                     VIDEOS
                 </Link>
@@ -56,20 +58,23 @@ const Header = () => {
             </nav>
 
             {/* Right section - login/register buttons */}
-            <div className="flex items-center w-[276px] h-[45px] gap-[8px] pl-[10px] pr-0 mr-0">
+            <div className="flex items-center w-[276px] h-[51px] gap-[12px] mt-[18.5px] mb[18.5px] mr-[192px] ">
                 <Link
-                    to="/login"
-                    className="w-1/2 h-full flex items-center justify-center text-sm font-medium border border-gray-400 rounded uppercase"
+                    to="#"
+                    className="w-[104px] h-[51px] gap-[10px] pt-[12px] pr-[32px] pb-[12px] pl-[32px] rounded-[8px] border"
+
                 >
-                    Login
+                   <span className='font-tt font-normal text-[18px] w-[40px] h[27px] '>Login</span> 
                 </Link>
                 <Link
-                    to="/register"
-                    className="w-1/2 h-full flex items-center justify-center text-sm font-medium bg-black text-white rounded uppercase"
+                    to="#"
+                    className="w-[160px] h-[51px] gap-[10px] pt-[12px] pr-[32px] pb-[12px] pl-[32px] rounded-[8px] bg-[#474747] text-center"
+
                 >
-                    Register
+                  <span className='font-tt font-normal w-[96px] h-[27px] text-[#FFFFFF] mx-auto '>Register</span>  
                 </Link>
             </div>
+
         </header>
     );
 };
