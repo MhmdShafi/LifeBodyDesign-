@@ -26,7 +26,7 @@ const Footer = () => {
         </p>
 
         {/* Button */}
-        <button className="w-[159px] h-[68px] gap-[10px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] justify-center rounded-[8px] text-white bg-[#474747]">
+        <button className="font-tt font-normal w-[159px] h-[68px] gap-[10px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] justify-center rounded-[8px] text-white bg-[#474747]">
           <Link>Book Now</Link>
         </button>
       </div>

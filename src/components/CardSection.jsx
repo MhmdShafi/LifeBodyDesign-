@@ -68,7 +68,7 @@ const CardSection = () => {
         </div>
 
 
-         <div className='w-[176px] h-[108px] gap-[10px] mb-[96px] flex mx-auto'>
+         <div className='w-[178px] h-[66px] gap-[40px] ml-[872px] mb-[96px] flex mx-auto'>
         <button className='w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2]'>
           <img src="/image/Previous.png" alt="Previous" />
         </button>
