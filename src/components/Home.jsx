@@ -10,7 +10,7 @@ const Home = () => {
     id: 1,
     title: 'Discovery',
     subtitle: 'Class #01',
-    heading: 'Your Heading',
+    heading: 'Discovery Class',
     description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
     extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/Frame01.png'
@@ -20,8 +20,8 @@ const Home = () => {
     title: 'Tower',
     subtitle: 'Class #02',
     heading: 'Tower',
-    description: 'Learn to use the tower system effectively with expert guidance.',
-    extra: 'Tower classes help build core strength, stability, and form.',
+       description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
+    extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/Frame02.png'
   },
   {
@@ -29,8 +29,8 @@ const Home = () => {
     title: 'Reformer',
     subtitle: 'Class #3',
     heading: 'Reformer',
-    description: 'Learn to use the tower system effectively with expert guidance.',
-    extra: 'Tower classes help build core strength, stability, and form.',
+       description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
+    extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/Frame03.png'
   },
   {
@@ -38,8 +38,8 @@ const Home = () => {
     title: 'Studio',
     subtitle: 'Class #04',
     heading: 'Studio',
-    description: 'Learn to use the tower system effectively with expert guidance.',
-    extra: 'Tower classes help build core strength, stability, and form.',
+        description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
+    extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/frame04.png'
   },
   {
@@ -47,8 +47,8 @@ const Home = () => {
     title: 'Mens',
     subtitle: 'Class #05',
     heading: 'Mens Power',
-    description: 'Learn to use the tower system effectively with expert guidance.',
-    extra: 'Tower classes help build core strength, stability, and form.',
+       description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
+    extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/Frame05.png'
   },
   {
@@ -56,8 +56,8 @@ const Home = () => {
     title: 'Private',
     subtitle: 'Class #06',
     heading: 'Private',
-    description: 'Learn to use the tower system effectively with expert guidance.',
-    extra: 'Tower classes help build core strength, stability, and form.',
+     description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
+    extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/Frame06.png'
   },
   {
@@ -65,8 +65,8 @@ const Home = () => {
     title: 'Duet',
     subtitle: 'Class #07',
     heading: 'Duet',
-    description: 'Learn to use the tower system effectively with expert guidance.',
-    extra: 'Tower classes help build core strength, stability, and form.',
+       description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
+    extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/Frame07.png'
   },
   {
@@ -74,8 +74,8 @@ const Home = () => {
     title: 'Pre & Post Natal',
     subtitle: 'Class #08',
     heading: 'Pre & Post Natal',
-    description: 'Learn to use the tower system effectively with expert guidance.',
-    extra: 'Tower classes help build core strength, stability, and form.',
+       description: `This session is different to a usual 1:1. It is an opportunity to become familiar with the studio, the apparatus and discuss your goals with a teacher. Perfect if you are new to Pilates, the studio or if you have an injury.`,
+    extra: `The goal of the session is to provide you with an understanding of the Pilates method, the studio and what the best option is for you to reach your goals.`,
     image: '/image/Frame08.png'
   },
   // Add more items as needed...
@@ -106,12 +106,12 @@ const Home = () => {
     }
   ];
   return (
-    <div className="w-[1920px] h-[1080px]">
+    <>
      
         <Header />
         <Mian items={classData} dropDownItems={dropdownItems }/>
       
-    </div>
+    </>
     
 
   )

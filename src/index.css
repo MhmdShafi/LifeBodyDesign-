@@ -1,7 +1,12 @@
 @font-face{
   font-family: Ivy Mode;
-  src:url("../fonts/ivy-mode-regular.ttf");
-  font-family:TT Commons;
+  src:url("../public/fonts/ivy-mode-regular.ttf");
+  
+}
+@font-face{
+  font-family: TT Commons;
+  src:url("../public/fonts/tt-commons-medium.ttf");
+  
 }
 
 @import "tailwindcss";
@@ -11,10 +16,3 @@
   --font-tt:TT-Commons,"sans-sarif";
 }
 
-html, body {
-  width: 1920px;
-  height: 1080px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}

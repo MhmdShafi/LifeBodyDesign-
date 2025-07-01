@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,17 +9,17 @@ const DropdownBtns = ({ items }) => {
   };
 
   return (
-    <div className='w-[1920px] h-[658px] gap-[40px] pt-[96px] pr-[192px] pb-[96px] pl-[192px] '>
+    <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 space-y-10 bg-white">
       {items.map((section, index) => (
-        <div key={index}>
+        <div  key={index} className='w-full max-w-[1536px] min-h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 border border-[#E5E5E5] space-y-10 bg-white'>
           {/* Main box */}
-          <div className='w-[1536px] h-[213px] gap-[16px] rounded-[16px] border p-[48px] flex flex-col items-center justify-center mb-[10px]'>
-            <h2 className='font-ivy font-normal text-[48px] leading-[135%] tracking-[0] w-[345px] h-[65px] text-center whitespace-nowrap'>
+          <div className="">
+            <h2 className="font-ivy text-[32px] sm:text-[40px] lg:text-[48px] text-center leading-[135%]">
               {section.title}
             </h2>
             <Link
               onClick={() => toggleDropdown(index)}
-              className='font-tt font-normal text-[24px] leading-[150%] tracking-[0] w-[306px] h-[36px] text-center text-blue-600 cursor-pointer whitespace-nowrap'
+              className="block mx-auto font-tt font-normal text-[24px] leading-[150%] text-[#474747] text-center px-4 py-2 rounded cursor-pointer"
             >
               {activeIndex === index
                 ? `Exploring ${section.title.toLowerCase()}`
@@ -29,38 +27,33 @@ const DropdownBtns = ({ items }) => {
             </Link>
           </div>
 
-
-          {/* Dropdown items */}
+          {/* Dropdown Items */}
           {activeIndex === index && (
             <>
-              {section.items.map((item, i) => (
-  <div key={item.id}>
-    {/* Dropdown item row */}
-    <div className="flex w-[1536px] min-h-[135px] gap-[48px] pt-[24px] pr-[32px] pb-[24px] pl-[32px] rounded-[16px] bg-white">
-      <div className="font-ivy font-normal text-[32px] leading-[135%] tracking-[0] align-middle">
-        {item.title}
-      </div>
-      <div className="w-[935px] font-tt font-normal text-[24px] leading-[120%] tracking-[0]">
-        {item.description}
-      </div>
-      <div className="w-[181px] h-[54px] font-tt font-semibold text-[40px] leading-[135%] tracking-[0] text-center align-middle">
-        {item.price}
-      </div>
-    </div>
+              {section.items.map((item) => (
+                <div key={item.id}>
+                  <div className="w-full max-w-[1536px] mx-auto flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px]">
+                    <div className="font-ivy text-[24px] sm:text-[28px] md:text-[32px] leading-[135%] pt-[10px]">
+                      {item.title}
+                    </div>
+                    <div className="flex-1 font-tt text-[18px] sm:text-[20px] md:text-[24px] leading-[120%]">
+                      {item.description}
+                    </div>
+                    <div className="w-full md:w-[181px] text-[32px] sm:text-[36px] md:text-[40px] font-tt font-semibold text-center">
+                      {item.price}
+                    </div>
+                  </div>
+                  <div className="w-full max-w-[1536px] mx-auto h-[1px] bg-[#C0C0C0] my-2" />
+                </div>
+              ))}
 
-    {/* Divider line */}
-    <div className="w-[1536px] h-[1px] bg-[#C0C0C0] my-[8px]"></div>
-  </div>
-))}
-
-
-              {/* Show Less Link */}
-              <div className='w-[1536px] h-[213px] gap-[64px]'>
+              {/* Show Less */}
+              <div className="w-full max-w-[1536px] mx-auto text-center mt-6">
                 <Link
                   onClick={() => setActiveIndex(null)}
-                  className='text-blue-600 text-sm font-tt underline cursor-pointer'
+                  className="text-[#E05F40] text-sm font-tt underline cursor-pointer"
                 >
-                  Show Less
+                  View Less
                 </Link>
               </div>
             </>
