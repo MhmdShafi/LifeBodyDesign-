@@ -80,7 +80,8 @@ const Footer = () => {
 
 
         {/* Separator line */}
-        <div className="h-px bg-[#737373] w-full"></div>
+        <div className="w-full max-w-[1536px] border-t border-[#737373] mx-auto"></div>
+
 
 
 

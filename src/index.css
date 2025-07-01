@@ -1,11 +1,11 @@
 @font-face{
   font-family: Ivy Mode;
-  src:url("../public/fonts/ivy-mode-regular.ttf");
+  src:url("/fonts/ivy-mode-regular.ttf");
   
 }
 @font-face{
   font-family: TT Commons;
-  src:url("../public/fonts/tt-commons-medium.ttf");
+  src:url("/fonts/tt-commons-medium.ttf");
   
 }
 

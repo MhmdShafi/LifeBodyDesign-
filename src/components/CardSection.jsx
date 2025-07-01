@@ -30,7 +30,7 @@ const CardSection = ({ teachers }) => {
       </div>
 
       {/* Cards */}
-      <div className='w-full max-w-[1278px] min-h-[585px] flex gap-12 mb-[64px] mx-auto flex-wrap justify-center'>
+      <div className='w-full max-w-[1278px] min-h-[585px] flex gap-12 mb-[64px] mx-auto flex-nowrap justify-center'>
         {paginatedTeachers.map((teacher, index) => (
           <div key={index} className='w-full max-w-[394px] min-h-[585px] flex flex-col gap-6'>
             <img
