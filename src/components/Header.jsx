@@ -16,7 +16,7 @@ const Header = () => {
 
 
             {/* Center section - navigation links */}
-            <nav className="w-full max-w-[650px] py-[30px] mx-auto flex items-center gap-[32px] px-4 sm:px-6">
+            <nav className="w-full max-w-[650px] py-[30px] mx-auto flex items-center gap-[32px] mx-auto">
                 <Link
                     to="#"
                     className="font-tt font-medium text-[18px] leading-[150%] tracking-normal align-middle uppercase"
