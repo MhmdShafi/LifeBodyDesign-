@@ -8,9 +8,8 @@ const Contact = () => {
 >
   
  <div className="w-full max-w-[756px] p-[24px] gap-[14px] rounded-[16px] border border-[#E5E5E5] flex flex-col items-center">
-  <div className="relative w-[44px] h-[44px] ml-[-24px]">
-    <img src="/image/Vector_1.png" alt="Find Us Icon" className="absolute w-[29.33px] h-[33.89px] top-[5.5px] left-[7.33px]" />
-    <img src="/image/Vector.png" alt="Inner Icon" className="absolute w-[11px] h-[11px] top-[14.67px] left-[16.5px]" />
+  <div className="relative w-[44px] h-[44px] ml-[-6px]">
+    <img src="/image/icon.JPG" alt="Find Us Icon" className="absolute w-[29.33px] h-[33.89px] top-[5.5px] left-[7.33px] " />
   </div>
 
   <h2 className="text-[28px] font-ivy font-normal text-[#474747] leading-[120%] w-[127px] text-center">
