@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header className="w-full max-w-[1920px] h-auto bg-white flex flex-wrap items-center mx-auto">
+        <header className="w-full max-w-[1920px] h-auto bg-white flex flex-nowrap items-center justify-between gap-x-4 px-[16px] sm:px-[32px] lg:px-[192px] mx-auto">
             {/* Left section - logo */}
 
-            <div className="flex-shrink-0 w-[163px] h-[64px] ml-[192px] my-[12px]">
+            <div className="flex-shrink-0 w-[163px] h-[64px] justify-between my-[12px]">
                 <img
                     src="/image/logo.png"
                     alt="Logo"
@@ -16,7 +16,7 @@ const Header = () => {
 
 
             {/* Center section - navigation links */}
-            <nav className="w-full max-w-[650px] py-[30px] mx-auto flex items-center gap-[32px] mx-auto">
+            <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 max-w-full overflow-hidden flex-1 whitespace-nowrap">
                 <Link
                     to="#"
                     className="font-tt font-medium text-[18px] leading-[150%] tracking-normal align-middle uppercase"
@@ -60,7 +60,7 @@ const Header = () => {
             </nav>
 
             {/* Right section - login/register buttons */}
-            <div className="flex items-center w-full max-w-[276px] h-[51px] gap-3 mt-[18.5px] mb-[18.5px] mr-0 lg:mr-[192px] mx-auto">
+            <div className="flex items-center gap-3 flex-shrink-0">
                 <Link
                     to="#"
                     className="w-[104px] h-[51px] gap-[10px] pt-[12px] pr-[32px] pb-[12px] pl-[32px] rounded-[8px] border"

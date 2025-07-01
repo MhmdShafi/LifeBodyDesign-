@@ -7,6 +7,55 @@ import Footer from './Footer'
 import Contact from './Contact'
 import HeroSection from './HeroSection'
 const Mian = ({ items, dropDownItems }) => {
+  const teachers = [
+  {
+    name: 'Hanna Rosser',
+    image: '/image/Rectangle1.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Carla Calzoni',
+    image: '/image/Rectangle2.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Adison Herwitz',
+    image: '/image/Rectangle3.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Carla Calzoni',
+    image: '/image/Rectangle2.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Adison Herwitz',
+    image: '/image/Rectangle3.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Hanna Rosser',
+    image: '/image/Rectangle1.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Carla Calzoni',
+    image: '/image/Rectangle2.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Hanna Rosser',
+    image: '/image/Rectangle1.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  {
+    name: 'Adison Herwitz',
+    image: '/image/Rectangle3.png',
+    desc: 'Expert in frontend development, specializing in React and UI animations.',
+  },
+  // Add more teacher objects if needed
+];
+
   return (
     <>
       {/* HERO Section */}
@@ -16,7 +65,7 @@ const Mian = ({ items, dropDownItems }) => {
       <Contact />
       <Carousel items={items} />
       <DropdownBtns items={dropDownItems} />
-      <CardSection />
+      <CardSection teachers={teachers} />
       <Footer />
     </>
   );

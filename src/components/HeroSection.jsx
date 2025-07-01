@@ -11,7 +11,7 @@ const HeroSection = () => {
 
         {/* Large Text */}
         <div className="absolute top-[120px] sm:top-[200px] lg:top-[286px] w-full max-w-[1797px] px-4 sm:px-8 lg:px-[62px] mx-auto">
-  <h1 className="font-ivy font-normal text-[360px] leading-[100%] tracking-[0] text-center uppercase uppercase text-[#474747] pt-[10px]  opacity-[0.05]">
+  <h1 className="font-ivy font-normal text-[clamp(48px,15vw,360px)] leading-[100%] tracking-[0] text-center uppercase text-[#474747] pt-[10px] opacity-[0.05]">
     Lifebody
   </h1>
 
