@@ -41,7 +41,7 @@ const Footer = () => {
 
         <div className="w-full max-w-[1536px] h-[76px] flex items-center justify-between px-4 sm:px-8 lg:px-[96px] mx-auto -ml-[40px]">
           {/* Left nav */}
-          <div className="flex gap-4 sm:gap-6 text-[#525252]">
+          <div className="flex gap-4 sm:gap-6 text-[#525252] ml-8 sm:ml-10">
             <Link className="font-tt font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] uppercase whitespace-nowrap">
               PRODUCT
             </Link>
@@ -80,7 +80,8 @@ const Footer = () => {
 
 
         {/* Separator line */}
-        <div className="w-full max-w-[1536px] border border-[#737373] mx-auto"></div>
+        <div className="h-px bg-[#737373] w-full"></div>
+
 
 
 
