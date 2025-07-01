@@ -60,7 +60,7 @@ const Header = () => {
             </nav>
 
             {/* Right section - login/register buttons */}
-            <div className="flex items-center w-full max-w-[276px] h-[51px] gap-3 mt-[18.5px] mb-[18.5px] mr-0 lg:mr-[192px] ">
+            <div className="flex items-center w-full max-w-[276px] h-[51px] gap-3 mt-[18.5px] mb-[18.5px] mr-0 lg:mr-[192px] mx-auto">
                 <Link
                     to="#"
                     className="w-[104px] h-[51px] gap-[10px] pt-[12px] pr-[32px] pb-[12px] pl-[32px] rounded-[8px] border"
