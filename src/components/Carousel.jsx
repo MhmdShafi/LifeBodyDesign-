@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentItem = items[currentIndex];
-   console.log(currentIndex);
+   console.log(currentItem.image);
   const handleChange = (index) => setCurrentIndex(index);
   const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
   const handleNext = () => setCurrentIndex((prev) => (prev + 1) % items.length);
