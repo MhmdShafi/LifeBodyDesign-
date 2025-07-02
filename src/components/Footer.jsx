@@ -39,42 +39,31 @@ const Footer = () => {
       {/* Nav links */}
       <div className='w-full max-w-[1536px] min-h-[164px] flex flex-col gap-8 px-4 sm:px-6 lg:px-8 mx-auto'>
 
-        <div className="w-full max-w-[1536px] h-[76px] flex items-center justify-between px-4 sm:px-8 lg:px-[96px] mx-auto -ml-[40px]">
+        <div className="w-full max-w-[1536px] h-[76px] flex items-center px-4 sm:px-8 lg:px-[96px] mx-auto">
           {/* Left nav */}
-          <div className="flex gap-4 sm:gap-6 text-[#525252] ml-8 sm:ml-10">
-            <Link className="font-tt font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] uppercase whitespace-nowrap">
-              PRODUCT
-            </Link>
-            <Link className="font-tt font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] uppercase whitespace-nowrap">
-              FEATURES
-            </Link>
-            <Link className="font-tt font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] uppercase whitespace-nowrap">
-              RESOURCES
-            </Link>
+          <div className="flex items-center justify-start gap-[32px] text-[#525252] flex-1 min-w-0">
+            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[83px] h-[30px] flex items-center justify-center">PRODUCT</Link>
+            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[86px] h-[30px] flex items-center justify-center">FEATURES</Link>
+            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[103px] h-[30px] flex items-center justify-center">RESOURCES</Link>
           </div>
 
           {/* Logo */}
-          <div className="flex-shrink-0 w-[120px] sm:w-[150px] md:w-[193px] h-[40px] sm:h-[50px] md:h-[76px]">
-            <img
-              src="/image/logo.png"
-              alt="Logo"
-              className="w-full h-full object-contain"
-            />
+          <div className="flex justify-center w-[120px] sm:w-[150px] md:w-[193px] h-[40px] sm:h-[50px] md:h-[76px] shrink-0">
+            <img src="/image/logo.png" alt="Logo" className="w-full h-full object-contain" />
           </div>
 
           {/* Right nav */}
-          <div className="flex gap-4 sm:gap-6 text-[#525252]">
-            <Link className="font-tt font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] uppercase whitespace-nowrap">
-              ABOUT
-            </Link>
-            <Link className="font-tt font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] uppercase whitespace-nowrap">
-              BLOG
-            </Link>
-            <Link className="font-tt font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] uppercase whitespace-nowrap">
-              SUPPORT
-            </Link>
+          <div className="flex items-center justify-end gap-[32px] text-[#525252] flex-1 min-w-0">
+            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap">ABOUT</Link>
+            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap">BLOG</Link>
+            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap">SUPPORT</Link>
           </div>
         </div>
+
+
+
+
+
 
 
 
@@ -87,7 +76,7 @@ const Footer = () => {
 
 
         {/* Footer bottom links */}
-        <div className="ml-[600px]  mb-[24px] w-[223px] h-[24px] gap-[24px] whitespace-nowrap item-center">
+        <div className="mx-auto mb-[24px] w-[223px] h-[24px] gap-[24px] whitespace-nowrap item-center">
           © 2010 — 2020 &nbsp;&nbsp; Privacy — Terms
         </div>
 

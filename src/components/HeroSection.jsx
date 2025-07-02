@@ -16,7 +16,7 @@ const HeroSection = () => {
   </h1>
 
           {/* Heading, paragraph, buttons */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1016px] px-4 sm:px-6 md:px-8 mt-[50px] mb-[83px] gap-[40px] ml-[90px] mx-auto">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1016px] px-4 sm:px-6 md:px-8 mt-[50px] mb-[83px] gap-[40px]">
             <h1 className="text-[64px] font-ivy font-normal text-center leading-[135%] text-[#474747]">
               Discover, Transform, Thrive: Your Odyssey Starts at <span className="text-[#E05F40]">Lifebody Studio</span>
             </h1>
