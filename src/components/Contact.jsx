@@ -9,7 +9,7 @@ const Contact = () => {
   
 <div className="group w-full max-w-[756px] min-h-[250px] p-[24px] rounded-[16px] border border-[#E5E5E5] flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out">
 
-  {/*  Default content — visible initially */}
+ 
   <div className="flex flex-col items-center text-center gap-[10px] transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:h-0 group-hover:overflow-hidden">
     <div className="relative w-[44px] h-[44px] ml-[-6px]">
       <img src="/image/icon.JPG" alt="Find Us Icon" className="absolute w-[29.33px] h-[33.89px] top-[5.5px] left-[7.33px]" />
@@ -29,7 +29,7 @@ const Contact = () => {
     </div>
   </div>
 
-  {/* 🔹 Hover content — hidden by default, shown on hover */}
+ 
   <div className="flex items-center justify-center gap-[24px] opacity-0 h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:h-auto group-hover:mt-[24px] text-center">
     <h1 className="font-ivy font-normal text-[40px] leading-[135%] text-[#474747] max-w-[363px] text-center">
       View on Google Map

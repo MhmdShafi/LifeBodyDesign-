@@ -70,14 +70,14 @@ const DropdownBtns = ({ items }) => {
                         }));
                         setActiveIndex(null);
                       }}
-                      className="text-[#E05F40] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[36px] text-sm font-tt underline cursor-pointer"
                     >
                       View Less
                     </Link>
                   ) : (
                     <Link
                       onClick={() => toggleShowMore(index)}
-                      className="text-[#E05F40] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[36px] text-sm font-tt underline cursor-pointer"
                     >
                       View More
                     </Link>
