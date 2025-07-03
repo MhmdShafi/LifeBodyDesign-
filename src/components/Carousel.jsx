@@ -24,28 +24,30 @@ const Carousel = ({ items }) => {
   {/* Top Nav Buttons */}
   <div className='w-full max-w-[1536px] h-auto flex justify-between rounded-[12px] p-1 sm:p-2 md:p-4w-[1536px] h-[102px] flex justify-between rounded-[12px] p-[4px]'>
     {items.map((item, index) => (
-     <Link
+   <Link
   key={item.id}
   onClick={() => handleChange(index)}
-  className={`font-ivy md:w-[155px] font-formal flex items-center justify-center text-cente uppercase text-[#474747] 
-    transition all ease-out
+  className={`font-ivy font-formal flex items-center justify-center text-center uppercase text-[#474747] 
+    transition-all ease-out duration-300
     hover:bg-[#f8f8f4] hover:rounded-[16px]
-    ${index === currentIndex 
-      ? 'w-[214px] h-[73px] text-[#E05F40] rounded-[8px] ' 
-      : 'w-auto h-[73px]'}`
-  }
+    ${
+      index === currentIndex
+        ? 'w-[214px] h-[73px] text-[#E05F40] rounded-[8px]'
+        : 'w-[120px] h-[60px] opacity-80 scale-95' // shrink others
+    }`}
 >
   <span
-    className={`flex items-center justify-center text-center whitespace-nowrap transition-all duration-300 
+    className={`flex items-center justify-center text-center whitespace-nowrap transition-all duration-700 
       ${
         index === currentIndex
-          ? 'w-[214px] h-[54px] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px]'
-          : 'min-w-[75px] min-h-[33px] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px]'
+          ? 'max-w-[408px] h-[54px] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px]'
+          : 'text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]'
       }`}
   >
     {item.title}
   </span>
 </Link>
+
 
 
     ))}
