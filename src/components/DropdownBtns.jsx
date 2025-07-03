@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DropdownBtns = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [showMoreMap, setShowMoreMap] = useState({});
-
+  console.log(items.title)
   const toggleDropdown = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
@@ -43,23 +43,55 @@ const DropdownBtns = ({ items }) => {
             <>
               {(showMoreMap[index] ? section.items : section.items.slice(0, 5)).map((item) => (
                 <div key={item.id}>
-                  <div className="w-full max-w-[1536px] mx-auto flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px]">
-                    <div className="font-ivy text-[24px] md:w-[260px] h-[43px] sm:text-[28px] md:text-[32px] leading-[135%] pt-[10px] uppercase">
-                      {item.title}
+                  <div className="w-full max-w-[1584px] mx-auto relative group">
+
+                    <div className="w-full max-w-[1536px] flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px] group-hover:hidden transition-all duration-300 ease-in-out">
+                      {/* Title */}
+                      <div className="font-ivy text-[24px] md:w-[260px] h-[43px] sm:text-[28px] md:text-[32px] leading-[135%] pt-[10px] uppercase">
+                        {item.title}
+                      </div>
+
+                      <div className="flex-1 font-tt text-[18px] md:w-[935px] h-[87px] sm:text-[20px] md:text-[24px] leading-[120%]">
+                        {item.description}
+                      </div>
+
+
+                      <div className="w-full md:w-[181px] h-[54px] text-[32px] sm:text-[36px] md:text-[40px] font-tt font-semibold text-center">
+                        {item.price}
+                      </div>
                     </div>
-                    <div className="flex-1 font-tt text-[18px] md:w-[935px] h-[87px] sm:text-[20px] md:text-[24px] leading-[120%]">
-                      {item.description}
-                    </div>
-                    <div className="w-full md:w-[181px] h-[54px] text-[32px] sm:text-[36px] md:text-[40px] font-tt font-semibold text-center">
-                      {item.price}
-                    </div>
+
+
+                    {section.title === 'Rates & Benefits' && (
+                      <div className="w-full max-w-[1536px] hidden group-hover:flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px] z-20 shadow-md transition-all duration-300 ease-in-out">
+
+                        <div className="font-ivy text-[24px] md:w-[260px] h-[43px] sm:text-[28px] md:text-[32px] leading-[135%] pt-[10px] uppercase">
+                          {item.title}
+                        </div>
+
+
+                        <div className="flex-1 font-tt text-[18px] w-full max-w-[700px] md:w-[823px] h-[87px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[120%]">
+                          {item.description}
+                        </div>
+
+
+                        <div className="w-full md:w-[181px] h-[54px] flex items-center justify-center gap-2 text-[32px] sm:text-[36px] md:text-[40px] font-tt font-semibold text-center">
+                          <span>{item.price}</span>
+                        </div>
+
+                        <div>
+                          <img src="/image/icon3.png" alt="Icon" className="w-[64px] h-[64px] object-contain" />
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  <div className="w-full max-w-[1536px] mx-auto h-[1px] bg-[#C0C0C0] my-2" />
+
+
                 </div>
               ))}
 
               {/* View More / View Less */}
-              {section.items.length >5 && (
+              {section.items.length > 5 && (
                 <div className="w-full max-w-[1536px] mx-auto text-center mt-6">
                   {showMoreMap[index] ? (
                     <Link

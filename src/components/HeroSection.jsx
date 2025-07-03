@@ -2,12 +2,14 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="w-full max-w-[1920px] min-h-[300px] sm:h-[500px] md:h-[700px] lg:h-[900px] mx-auto">
+      <div className='w-full'>
+    <div className="w-[25%] sm:w-full max-w-[1920px] min-h-[300px] sm:h-[500px] md:h-[700px] lg:h-[900px] mx-auto">
         <img
           src="/image/bg-image.jpg"
           alt="image"
           className="w-full h-full object-cover opacity-20"
         />
+      
 
         {/* Large Text */}
         <div className="absolute top-[120px] sm:top-[200px] lg:top-[286px] w-full max-w-[1797px] px-4 sm:px-8 lg:px-[62px] mx-auto">
@@ -26,12 +28,33 @@ const HeroSection = () => {
             </p>
 
             <div className="flex justify-between w-full max-w-[495px] gap-[16px] sm:gap-[20px] md:gap-[24px] mx-auto mt-[24px] sm:mt-[32px] lg:mt-[40px] text-[16px] sm:text-[18px] md:text-[20px]">
-              <button className="w-full max-w-[235.5px] h-[53px] px-[32px] py-[8px] rounded-[8px] border border-[#474747] bg-white text-black text-lg">
-                Explore Class
-              </button>
-              <button className="w-full max-w-[235.5px] h-[53px] bg-[#474747] text-white rounded-lg text-lg">
-                Book a Tour
-              </button>
+              <button
+  className="
+    w-full max-w-[235.5px] h-[53px] 
+    px-[32px] py-[8px] 
+    rounded-[8px] 
+    border border-[#474747] 
+    hover:bg-white 
+    text-black 
+    text-lg 
+    hover:text-[#E05F40] 
+    hover:border-[#E05F40] 
+    transition-all duration-300
+  "
+>
+  Explore Class
+</button>
+
+              <button className="relative overflow-hidden w-full max-w-[235.5px] h-[53px] bg-[#474747] text-white rounded-lg text-lg group">
+  {/* Hover fill layer */}
+  <span className="absolute top-0 left-0 w-0 h-full bg-[#E05F40] group-hover:w-full transition-all duration-1000 ease-in-out z-0"></span>
+
+  {/* Button text */}
+  <span className="relative z-10 font-normal whitespace-nowrap">
+    Book a Tour
+  </span>
+</button>
+
             </div>
           </div>
         </div>
@@ -49,6 +72,7 @@ const HeroSection = () => {
             </span>
           </div>
         </div>
+      </div>
       </div>
   )
 }

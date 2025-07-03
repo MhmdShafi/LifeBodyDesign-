@@ -25,12 +25,40 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-[159px] h-[68px] mt-[32px] px-8 py-4 gap-[10px] rounded-[8px] bg-[#474747] flex items-center justify-center mx-auto">
-          {/* Button */}
-          <button className="font-tt font-normal text-[#FFFFFF]">
-            <Link>Book Now</Link>
-          </button>
-        </div>
+       <div
+  className="
+    relative 
+    w-full max-w-[159px] h-[68px] 
+    mt-[32px] 
+    px-8 py-4 
+    gap-[10px] 
+    rounded-[8px] 
+    bg-[#474747] 
+    flex items-center justify-center 
+    mx-auto 
+    overflow-hidden 
+    group 
+    cursor-pointer 
+    transition-all duration-700 ease-in-out
+  "
+>
+  {/* Hover fill layer */}
+  <span
+    className="
+      absolute top-0 left-0 w-0 h-full 
+      bg-[#E05F40] 
+      group-hover:w-full 
+      transition-all duration-700 ease-in-out 
+      z-0
+    "
+  ></span>
+
+  {/* Button text */}
+  <button className="relative z-10 font-tt font-normal text-[#FFFFFF] text-[16px] md:text-[20px] whitespace-nowrap">
+    <Link to="#">Book Now</Link>
+  </button>
+</div>
+
 
 
 

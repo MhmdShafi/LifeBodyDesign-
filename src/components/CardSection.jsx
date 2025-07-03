@@ -6,7 +6,8 @@ import 'swiper/css/navigation'
 
 const CardSection = ({ teachers }) => {
   return (
-    <div className='w-full max-w-[1920px] min-h-[1101px] md:px-[96px] lg:px-[192px] py-[96px] gap-[64px] bg-[#FAFAF5] mx-auto'>
+    <div className='w-full bg-[#FAFAF5]'>
+    <div className='w-full max-w-[1920px] min-h-[1101px] md:px-[96px] lg:px-[192px] py-[96px] gap-[64px]  mx-auto'>
       {/* Title Section */}
       <div className="w-full max-w-[603px] min-h-[128px] mb-[64px] text-[#474747] gap-4 mx-auto text-center whitespace-nowrap">
         <h1 className="w-full font-ivy font-normal text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[135%]">
@@ -16,6 +17,7 @@ const CardSection = ({ teachers }) => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </p>
       </div>
+     
 
       {/* Swiper Section */}
       <Swiper
@@ -58,14 +60,60 @@ const CardSection = ({ teachers }) => {
 
       {/* Custom Navigation Buttons */}
       <div className='w-full max-w-[178px] min-h-[66px] gap-[40px] flex justify-center mx-auto text-[#474747]'>
-        <button className='custom-prev w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2]'>
-          <img src="/image/Previous.png" alt="Previous" />
-        </button>
-        <button className='custom-next w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2]'>
-          <img src="/image/Next.png" alt="Next" />
-        </button>
+        <button className="w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
+  <svg
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_437_251)">
+      <path
+        d="M25 30L15 20L25 10"
+        stroke="#474747"
+        strokeWidth="2.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="group-hover:stroke-white transition-colors duration-300"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_437_251">
+        <rect width="40" height="40" fill="white" transform="matrix(-1 0 0 -1 40 40)" />
+      </clipPath>
+    </defs>
+  </svg>
+</button>
+
+    <button  className="w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
+  <svg
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_437_255)">
+      <path
+        d="M15 10L25 20L15 30"
+        stroke="#474747"
+        strokeWidth="2.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="group-hover:stroke-white transition-colors duration-300"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_437_255">
+        <rect width="40" height="40" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+</button>
       </div>
     </div>
+     </div>
   )
 }
 
