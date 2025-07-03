@@ -43,15 +43,15 @@ const DropdownBtns = ({ items }) => {
             <>
               {(showMoreMap[index] ? section.items : section.items.slice(0, 5)).map((item) => (
                 <div key={item.id}>
-                  <div className="w-full max-w-[1584px] mx-auto relative group">
+                  <div className="w-full max-w-[1584px]  mx-auto relative group">
 
-                    <div className="w-full max-w-[1536px] flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px] group-hover:hidden transition-all duration-300 ease-in-out">
+                    <div className="w-full max-w-[1536px] pb-[40px] flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px] group-hover:hidden transition-all duration-300 ease-in-out">
                       {/* Title */}
                       <div className="font-ivy text-[24px] md:w-[260px] h-[43px] sm:text-[28px] md:text-[32px] leading-[135%] pt-[10px] uppercase">
                         {item.title}
                       </div>
 
-                      <div className="flex-1 font-tt text-[18px] md:w-[935px] h-[87px] sm:text-[20px] md:text-[24px] leading-[120%]">
+                      <div className="flex-1 font-tt text-[18px] md:w-[935px] h-[90px] sm:text-[20px] md:text-[24px] leading-[120%]">
                         {item.description}
                       </div>
 
@@ -62,15 +62,15 @@ const DropdownBtns = ({ items }) => {
                     </div>
 
 
-                    {section.title === 'Rates & Benefits' && (
-                      <div className="w-full max-w-[1536px] hidden group-hover:flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px] z-20 shadow-md transition-all duration-300 ease-in-out">
+                   
+                      <div className="w-full max-w-[1536px] pb-[40px] hidden  group-hover:flex flex-col md:flex-row gap-6 md:gap-12 p-6 bg-white rounded-[16px] z-20 shadow-md transition-all duration-300 ease-in-out">
 
                         <div className="font-ivy text-[24px] md:w-[260px] h-[43px] sm:text-[28px] md:text-[32px] leading-[135%] pt-[10px] uppercase">
                           {item.title}
                         </div>
 
 
-                        <div className="flex-1 font-tt text-[18px] w-full max-w-[700px] md:w-[823px] h-[87px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[120%]">
+                        <div className="flex-1 font-tt text-[18px] w-full max-w-[750px] md:w-[823px] h-[90px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[120%]">
                           {item.description}
                         </div>
 
@@ -83,7 +83,7 @@ const DropdownBtns = ({ items }) => {
                           <img src="/image/icon3.png" alt="Icon" className="w-[64px] h-[64px] object-contain" />
                         </div>
                       </div>
-                    )}
+                    
                   </div>
 
 
