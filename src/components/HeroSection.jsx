@@ -3,7 +3,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
       <div className='w-full'>
-    <div className="w-[25%] sm:w-full max-w-[1920px] min-h-[300px] sm:h-[500px] md:h-[700px] lg:h-[900px] mx-auto">
+    <div className="w-[25%] sm:w-full max-w-[1920px] min-h-[350px] sm:h-[500px] md:h-[700px] lg:h-[900px] mx-auto">
         <img
           src="/image/bg-image.jpg"
           alt="image"
@@ -60,9 +60,7 @@ const HeroSection = () => {
         </div>
 
         {/* Location Badge */}
-        <div className="absolute w-full max-w-[329px] h-auto flex flex-col items-center gap-[16px] sm:gap-[20px] 
-          top-[400px] sm:top-[600px] lg:top-[800px] 
-          left-[50%] -translate-x-1/2 text-center">
+        <div className="mx-auto w-full max-w-[329px] flex flex-col items-center gap-[16px] sm:gap-[20px] text-center transform -translate-y-[40px] sm:-translate-y-[60px]">
           <div className="w-[30px] h-[30px] flex items-center justify-center">
             <img src="/image/Frame.png" alt="icon" />
           </div>

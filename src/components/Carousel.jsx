@@ -57,23 +57,23 @@ const Carousel = ({ items }) => {
   <div className="flex flex-wrap justify-between items-start mt-12 gap-6 max-w-[1536px] w-full">
   {/* Left Side Content */}
   <div className="w-full max-w-[756px] md:w-[48%] h-auto md:h-[535px]  flex flex-col gap-8">
-    <div className="max-w-[628px]">
-      <p className="font-tt text-[16px] md:text-[18px] leading-[150%]">
+    <div className="max-w-[628px] h-[101px]">
+      <p className="font-tt max-w-[628px] h-[33px] text-[16px] md:text-[18px] leading-[150%]">
         {currentItem.subtitle}
       </p>
-      <h1 className="font-ivy text-[28px] md:text-[40px] text-[#474747] leading-[150%] mt-2">
+      <h1 className="font-ivy text-[28px] max-w-[628px] h-[60px] md:text-[40px] text-[#474747] leading-[150%] ">
         {currentItem.heading}
       </h1>
     </div>
 
-    <div className="max-w-[628px]">
+    <div className="max-w-[628px] h-[180px]">
       <p className="font-tt text-[16px] md:text-[20px] leading-[150%] text-[#474747]">
         {currentItem.description}
         <br /><br />{currentItem.extra}
       </p>
     </div>
 
-    <div className="flex flex-wrap gap-4 mt-6">
+    <div className="flex flex-wrap gap-4">
      <button
   className="
     relative overflow-hidden 

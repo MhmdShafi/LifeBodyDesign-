@@ -24,12 +24,11 @@ const Header = () => {
     gap-[16px] sm:gap-[24px] md:gap-[32px]
     w-full max-w-[1000px]
     mx-auto
-    min-h-[48px]
     no-scrollbar
     whitespace-nowrap
   "
             >
-                <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">ABOUT</Link>
+                <Link to="#" className="item-center font-normal text-[18px] text-[#525252] uppercase">ABOUT</Link>
                 <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">STUDIO</Link>
                 <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">TIMETABLE/ BOOK</Link>
                 <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">ON DEMAND</Link>
