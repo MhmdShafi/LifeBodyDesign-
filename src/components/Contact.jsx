@@ -4,7 +4,7 @@ const Contact = () => {
   return (
  
     <div
-  className="w-full max-w-[1920px] mx-auto px-4 md:px-[96px] py-[96px] bg-white flex flex-col lg:flex-row gap-[24px] justify-center items-center border-t border-b border-dashed border-[#E5E5E5]"
+  className="w-full max-w-[1920px] mx-auto px-4 md:px-[96px] py-[96px] bg-white flex flex-col lg:flex-row gap-[24px] justify-center items-center border-t border-b  border-[#E5E5E5]"
 >
   
 <div className="group w-full max-w-[756px] min-h-[250px] p-[24px] rounded-[16px] border border-[#E5E5E5] flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out">
@@ -90,3 +90,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+

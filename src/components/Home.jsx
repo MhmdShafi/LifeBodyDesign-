@@ -109,7 +109,7 @@ const Home = () => {
   ];
   return (
     <>
-     
+        
         <Header />
         <Mian items={classData} dropDownItems={dropdownItems }/>
       

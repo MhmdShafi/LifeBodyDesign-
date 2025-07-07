@@ -22,7 +22,7 @@ const Carousel = ({ items }) => {
 
 
   {/* Top Nav Buttons */}
-  <div className='w-full max-w-[1536px] h-auto flex justify-between rounded-[12px] p-1 sm:p-2 md:p-4w-[1536px] h-[102px] flex justify-between rounded-[12px] p-[4px]'>
+  <div className='w-full max-w-[1536px] h-auto flex justify-between rounded-[12px] p-1 sm:p-2 md:p-4w-[1536px] h-[102px] flex items-center justify-between rounded-[12px] p-[4px]'>
     {items.map((item, index) => (
    <Link
   key={item.id}

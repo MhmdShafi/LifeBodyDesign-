@@ -13,7 +13,7 @@ const Header = () => {
                     alt="Logo"
                     className="w-full h-full object-contain"
                 />
-            </div>
+            </div> 
 
 
             {/* Center section - navigation links */}
@@ -108,7 +108,7 @@ const Header = () => {
 
             </div>
 
-        </header>
+     </header>
     );
 };
 

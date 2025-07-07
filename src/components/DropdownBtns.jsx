@@ -5,6 +5,7 @@ const DropdownBtns = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [showMoreMap, setShowMoreMap] = useState({});
   const [hasHoveredMap, setHasHoveredMap] = useState({});
+
   const toggleDropdown = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
@@ -24,8 +25,6 @@ const DropdownBtns = ({ items }) => {
           className={`w-full max-w-[1536px] min-h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 border border-[#E5E5E5] space-y-10 transition-colors duration-500 ease-in-out ${activeIndex === index ? 'bg-white' : 'hover:bg-[#FAFAF5] bg-white'
             }`}
         >
-
-          {/* Main box */}
 
           <div className="group contents">
             <h2
@@ -58,74 +57,36 @@ const DropdownBtns = ({ items }) => {
             </Link>
           </div>
 
-          {/* Dropdown Items */}
           {activeIndex === index && (
             <>
               {(showMoreMap[index] ? section.items : section.items.slice(0, 5)).map((item) => (
                 <div key={item.id}>
-                  <div className="w-full max-w-[1584px]  mx-auto relative group">
-
-                    <div className="w-full max-w-[1536px] h-[135px] pb-[30px] pt-[10px] items-center flex flex-col md:flex-row gap-6 md:gap-12  bg-white rounded-[16px] group-hover:hidden transition-all duration-1000 ease-in-out">
-                      {/* Title */}
-                      <div className="font-ivy text-[24px] w-full max-w-[260px] h-[43px] sm:text-[28px] md:text-[32px] item-center leading-[135%] pt-[10px] uppercase">
-                        {item.title}
-                      </div>
-
-                      <div className="flex-1 font-tt text-[18px] w-full max-w-[935px]  sm:text-[20px] md:text-[24px] leading-[120%] line-clamp-2">
-                        {item.description}
-                      </div>
-
-
-                      <div className="w-full md:w-[181px] h-[54px] flex items-center justify-center gap-2 font-tt text-center">
-                        <span className="text-[32px] sm:text-[36px] md:text-[40px] font-semibold">
-                          {item.price.split('/')[0]}
-                        </span>
-                        <span className="text-[18px] sm:text-[20px] md:text-[24px] font-normal">
-                          /{item.price.split('/')[1]}
-                        </span>
-                      </div>
-
-
-
+                  <div
+                    className={`w-full max-w-[1536px] h-auto py-[20px] flex flex-col md:flex-row items-center md:items-start justify-between md:gap-12 rounded-[16px] z-20 shadow-md ${hasHoveredMap[item.id] ? 'bg-[#FAFAF5]' : 'bg-white'
+                      } transition-colors duration-500 ease-in-out`}
+                    onMouseEnter={() =>
+                      setHasHoveredMap((prev) => ({ ...prev, [item.id]: true }))
+                    }
+                    onMouseLeave={() =>
+                      setHasHoveredMap((prev) => ({ ...prev, [item.id]: false }))
+                    }
+                  >
+                    <div className="font-ivy mx-auto md:mx-0 text-[24px] sm:text-[28px] md:text-[32px] pl-[32px] pt-[20px] md:w-[260px] h-[43px] leading-[135%] uppercase">
+                      {item.title}
                     </div>
 
-
-
                     <div
-                      className="w-full max-w-[1536px] h-[135px] pb-[30px] pt-[10px] hidden group-hover:flex flex-col md:flex-row items-center justify-center md:gap-12 bg-[#FAFAF5] rounded-[16px] z-20 shadow-md transition-all duration-700 ease-in-out"
-                      onMouseEnter={() =>
-                        setHasHoveredMap((prev) => ({ ...prev, [item.id]: true }))
-                      }
+                      className={`font-tt text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[120%]
+                        w-full max-w-[700px]
+                        ${hasHoveredMap[item.id] ? 'line-clamp-3' : 'line-clamp-2'}`}
                     >
-                      {/* Title - stays static */}
-                      <div className="font-ivy mx-auto text-[24px] sm:text-[28px] md:text-[32px] pl-[32px] md:w-[260px] h-[43px] leading-[135%] uppercase">
-                        {item.title}
-                      </div>
+                      {item.description}
+                    </div>
 
-                      {/* Description - animated in only on first hover */}
-                      <div
-                        className={`transition-all duration-1000 ease-in-out transform ${hasHoveredMap[item.id] ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-                          } flex-1 font-tt text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[120%] w-full max-w-[823px] line-clamp-2`}
-                      >
-                        {item.description}
-                      </div>
+                    <div className="relative md:w-[200px] h-[64px] flex items-center justify-end">
 
-                      {/* Price - same animation as description */}
                       <div
-                        className={`transition-all duration-1000 delay-200 ease-in-out transform ${hasHoveredMap[item.id] ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-                          } w-full mx-auto md:w-[181px] h-[54px] flex items-center justify-center gap-2 font-tt text-center`}
-                      >
-                        <span className="text-[32px] sm:text-[36px] md:text-[40px] font-semibold">
-                          {item.price.split('/')[0]}
-                        </span>
-                        <span className="text-[18px] sm:text-[20px] md:text-[24px] font-normal">
-                          {item.price.split('/')[1]}
-                        </span>
-                      </div>
-
-                      {/* Icon - delayed fade in */}
-                      <div
-                        className={`transition-opacity duration-1000 delay-500 ease-in-out ${hasHoveredMap[item.id] ? 'opacity-100' : 'opacity-0'
+                        className={`mr-2 transition-opacity duration-700 ease-in-out ${hasHoveredMap[item.id] ? 'opacity-100' : 'opacity-0'
                           }`}
                       >
                         <img
@@ -134,17 +95,28 @@ const DropdownBtns = ({ items }) => {
                           className="w-[64px] h-[64px] object-contain"
                         />
                       </div>
+
+
+                      <div
+                        className={`absolute right-0 flex gap-2 font-tt text-center items-center
+                          transition-all duration-700 ease-in-out
+                          ${hasHoveredMap[item.id]
+                            ? 'opacity-100 translate-x-[-100px]'
+                            : 'opacity-100 translate-x-0'
+                          }`}
+                      >
+                        <span className="text-[32px] sm:text-[36px] md:text-[40px] font-semibold">
+                          {item.price.split('/')[0]}
+                        </span>
+                        <span className="text-[18px] sm:text-[20px] md:text-[24px] font-normal">
+                          /{item.price.split('/')[1]}
+                        </span>
+                      </div>
                     </div>
-
-
-
                   </div>
-
-
                 </div>
               ))}
 
-              {/* View More / View Less */}
               {section.items.length > 5 && (
                 <div className="w-full max-w-[1536px] mx-auto text-center mt-6">
                   {showMoreMap[index] ? (
@@ -179,3 +151,6 @@ const DropdownBtns = ({ items }) => {
 };
 
 export default DropdownBtns;
+
+
+
