@@ -22,7 +22,7 @@ const DropdownBtns = ({ items }) => {
       {items.map((section, index) => (
         <div
           key={index}
-          className={`w-full max-w-[1536px] min-h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 border border-[#E5E5E5] space-y-10 transition-colors duration-500 ease-in-out ${activeIndex === index ? 'bg-white' : 'hover:bg-[#FAFAF5] bg-white'
+          className={`group  w-full max-w-[1536px] min-h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 border border-[#E5E5E5] space-y-10 transition-colors duration-500 ease-in-out ${activeIndex === index ? 'bg-white' : 'hover:bg-[#FAFAF5] bg-white'
             }`}
         >
 
@@ -43,7 +43,7 @@ const DropdownBtns = ({ items }) => {
             <Link
               to="#"
               onClick={() => toggleDropdown(index)}
-              className={`block text-center  ${section.title === 'Levels'
+              className={`block text-center cursor-pointer  ${section.title === 'Levels'
                 ? 'max-w-[213px] h-[36px]'
                 : 'max-w-[306px] h-[36px]'} whitespace-nowrap w-full text-[#474747] font-tt text-[24px] leading-[150%] px-4 py-2 rounded cursor-pointer mx-auto
       transition-all duration-700 delay-500 ease-in-out transform
@@ -128,14 +128,14 @@ const DropdownBtns = ({ items }) => {
                         }));
                         setActiveIndex(null);
                       }}
-                      className="text-[#E05F40] max-w-[100px] h-[36px] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
                     >
                       View Less
                     </Link>
                   ) : (
                     <Link
                       onClick={() => toggleShowMore(index)}
-                      className="text-[#E05F40] max-w-[100px] h-[36px] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
                     >
                       View More
                     </Link>

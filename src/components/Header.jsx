@@ -50,21 +50,26 @@ const Header = () => {
                 </Link> */}
                 <Link
   to="#"
-  className="
-    w-[104px] h-[51px] 
-    gap-[10px] 
-    pt-[10px] pr-[32px] pb-[12px] pl-[28px] 
-    rounded-[8px] 
-    border border-[#474747] 
-    bg-white 
-    hover:bg-[#FFFFFF] 
-    hover:border-[#E05F40] 
+ className="
+    group
+    w-[104px] h-[51px]
+    gap-[10px]
+    pt-[10px] pr-[32px] pb-[12px] pl-[28px]
+    rounded-[8px]
+    border border-[#474747]
+    bg-white
+    hover:bg-[#FFFFFF]
+    hover:border-[#E05F40]
     transition-all duration-300
     flex items-center justify-center
-    hover:text-[#E05F40]
   "
 >
-  <span className="font-normal w-[40px] h-[27px] text-[#474747] hover:text-[#E05F40] transition-colors duration-300">
+  <span className="
+    font-normal w-[40px] h-[27px]
+    text-[#474747]
+    transition-colors duration-300
+    group-hover:text-[#E05F40]
+  ">
     Login
   </span>
 </Link>
