@@ -18,21 +18,42 @@
 }
 
 
-/* styles.css or App.css */
+/* Light (300) */
 @font-face {
-  font-family: 'TT Commons';
-  src: url('/fonts/tt-commons-medium.otf') format('truetype');
-  font-weight: 500;
+  font-family: TT Commons;
+  src: url('/fonts/tt-commons/Demo_Fonts/Fontspring-DEMO-tt_commons_pro_light.otf') format('opentype');
+  font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Light (400) */
 @font-face {
-  font-family: 'Indie Flower';
-  font-style: normal;
+  font-family: TT Commons;
+  src: url('/fonts/tt-commons/Demo_Fonts/Fontspring-DEMO-tt_commons_pro_regular.otf') format('opentype');
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
-  src: url('/fonts/IndieFlower-Regular.ttf') format('truetype');
 }
+
+/* Medium (500) */
+@font-face {
+  font-family: TT Commons;
+  src: url('/fonts/tt-commons/Demo_Fonts/Fontspring-DEMO-tt_commons_pro_medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* Medium (600) */
+@font-face {
+  font-family: TT Commons;
+  src: url('/fonts/tt-commons/Demo_Fonts/Fontspring-DEMO-tt_commons_pro_demibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
 
@@ -40,6 +61,5 @@
 
 @theme {
   --font-ivy: Ivy Mode;
-  --font-tt: TT-Commons, "sans-sarif";
-  --font-indie: IndieFlower, "sans-sarif";
+  --font-tt: TT Commons, "sans-sarif";
 }

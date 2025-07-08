@@ -15,12 +15,12 @@ const Footer = () => {
       <div className="w-full max-w-[935px] min-h-[264px] flex flex-col items-center  mx-auto">
         <div className="w-full max-w-[935px]  flex flex-col  mx-auto">
           {/* Heading */}
-          <h2 className="w-full max-w-[378px] font-ivy font-normal text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[135%] text-center text-[#474747] mx-auto">
+          <h2 className="w-full max-w-[378px] font-ivy font-regular text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[135%] text-center text-[#474747] mx-auto">
             Ready to Build?
           </h2>
 
           {/* Subheading */}
-          <p className="w-full max-w-[935px] min-h-[72px] font-tt font-normal text-[24px] leading-[150%] tracking-[0] text-center">
+          <p className="w-full max-w-[935px] min-h-[72px] font-tt font-regular text-[24px] leading-[150%] tracking-[0] text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
@@ -54,7 +54,7 @@ const Footer = () => {
   ></span>
 
   {/* Button text */}
-  <button className="relative z-10 font-tt font-normal text-[#FFFFFF] text-[16px] md:text-[20px] whitespace-nowrap">
+  <button className="relative z-10 font-tt font-regular text-[#FFFFFF] text-[16px] md:text-[20px] pt-[5px] whitespace-nowrap">
     <Link to="#">Book Now</Link>
   </button>
 </div>
@@ -70,9 +70,9 @@ const Footer = () => {
         <div className="w-full max-w-[1536px] h-[76px] flex items-center px-4 sm:px-8 lg:px-[96px] mx-auto">
           {/* Left nav */}
           <div className="flex items-center justify-start gap-[32px] text-[#525252] flex-1 min-w-0">
-            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[83px] h-[30px] flex items-center justify-center">PRODUCT</Link>
-            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[86px] h-[30px] flex items-center justify-center">FEATURES</Link>
-            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[103px] h-[30px] flex items-center justify-center">RESOURCES</Link>
+            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[83px] h-[30px] flex items-center justify-center">PRODUCT</Link>
+            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[86px] h-[30px] flex items-center justify-center">FEATURES</Link>
+            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[103px] h-[30px] flex items-center justify-center">RESOURCES</Link>
           </div>
 
           {/* Logo */}
@@ -82,9 +82,9 @@ const Footer = () => {
 
           {/* Right nav */}
           <div className="flex items-center justify-end gap-[32px] text-[#525252] flex-1 min-w-0">
-            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap">ABOUT</Link>
-            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap">BLOG</Link>
-            <Link className="font-tt text-[16px] md:text-[18px] uppercase whitespace-nowrap">SUPPORT</Link>
+            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">ABOUT</Link>
+            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">BLOG</Link>
+            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">SUPPORT</Link>
           </div>
         </div>
 
@@ -104,7 +104,7 @@ const Footer = () => {
 
 
         {/* Footer bottom links */}
-        <div className="mx-auto mb-[24px] w-[223px] h-[24px] gap-[24px] whitespace-nowrap item-center">
+        <div className=" font-tt font-regular mx-auto mb-[24px] w-[223px] h-[24px] gap-[24px] whitespace-nowrap item-center">
           © 2010 — 2020 &nbsp;&nbsp; Privacy — Terms
         </div>
 

@@ -28,12 +28,12 @@ const Header = () => {
     whitespace-nowrap
   "
             >
-                <Link to="#" className="item-center font-normal text-[18px] text-[#525252] uppercase">ABOUT</Link>
-                <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">STUDIO</Link>
-                <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">TIMETABLE/ BOOK</Link>
-                <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">ON DEMAND</Link>
-                <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">PROGRAMS</Link>
-                <Link to="#" className="font-normal text-[18px] text-[#525252] uppercase">VIDEOS</Link>
+                <Link to="#" className="item-center font-tt font-medium text-[18px] text-[#525252] uppercase">ABOUT</Link>
+                <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">STUDIO</Link>
+                <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">TIMETABLE / BOOK</Link>
+                <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">ON DEMAND</Link>
+                <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">PROGRAMS</Link>
+                <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">VIDEOS</Link>
             </nav>
 
 
@@ -41,13 +41,7 @@ const Header = () => {
 
             {/* Right section - login/register buttons */}
             <div className="flex items-center gap-3 flex-shrink-0">
-                {/* <Link
-                    to="#"
-                    className="w-[104px] h-[51px] gap-[10px] pt-[10px] pr-[32px] pb-[12px] pl-[28px] rounded-[8px] border border-[#474747]"
-
-                >
-                    <span className=' font-normal w-[40px] h-[27px] text-[#474747]'>Login</span>
-                </Link> */}
+               
                 <Link
   to="#"
  className="
@@ -66,7 +60,7 @@ const Header = () => {
 >
   <span className="
    pt-[3px]
-    font-normal w-[40px] h-[27px]
+    font-tt font-medium w-[40px] h-[27px]
     text-[#474747]
     transition-colors duration-300
     group-hover:text-[#E05F40]
@@ -106,7 +100,7 @@ const Header = () => {
                     ></span>
 
                     {/* button text */}
-                    <span className="relative z-10 font-normal whitespace-nowrap">
+                    <span className="relative z-10 font-tt font-medium whitespace-nowrap">
                         Register Now
                     </span>
                 </Link>

@@ -42,12 +42,12 @@ const DropdownBtns = ({ items }) => {
         >
           <div className="group contents">
             <h2
-              className={`text-center w-full  mx-auto whitespace-nowrap leading-[135%] font-ivy text-[32px] sm:text-[40px] lg:text-[48px]
+              className={`text-center w-full  mx-auto whitespace-nowrap leading-[135%] font-ivy font-regular text-[32px] sm:text-[40px] lg:text-[48px]
                 transition-all duration-700 delay-300 ease-in-out transform ${section.title === 'Levels'
                   ? 'max-w-[125px] h-[65px]'
                   : 'max-w-[345px] h-[65px]'
                 }
-                group-hover:font-tt group-hover:text-[24px]
+                group-hover:font-tt font-regular group-hover:text-[24px]
                 group-hover:max-w-[153px] group-hover:h-[36px]
                 group-hover:-translate-y-6 group-hover:translate-x-6`}
             >
@@ -59,12 +59,12 @@ const DropdownBtns = ({ items }) => {
               className={`block text-center ${section.title === 'Levels'
                 ? 'max-w-[213px] h-[36px]'
                 : 'max-w-[306px] h-[36px]'
-                } whitespace-nowrap w-full  text-[#474747] font-tt text-[24px] leading-[150%] px-4 py-2 rounded cursor-pointer mx-auto
+                } whitespace-nowrap w-full  text-[#474747] font-tt font-regular text-[24px] leading-[150%] px-4 py-2 rounded cursor-pointer mx-auto
                 transition-all duration-700 delay-500 ease-in-out transform ${section.title === 'Levels'
                   ? 'max-w-[458px] h-[65px]'
                   : 'max-w-[679px] h-[65px]'
                 }
-                group-hover:font-ivy group-hover:text-[48px] group-hover:leading-[135%] group-hover:max-w-[679px] group-hover:h-[65px]
+                group-hover:font-ivy font-regular group-hover:text-[48px] group-hover:leading-[135%] group-hover:max-w-[679px] group-hover:h-[65px]
                 group-hover:-translate-y-4 group-hover:translate-x-4`}
             >
               <span className="capitalize">
@@ -97,12 +97,12 @@ const DropdownBtns = ({ items }) => {
                       }}
                     >
 
-                      <div className="font-ivy md:mx-0 text-[24px] sm:text-[28px] md:text-[32px] pl-[20px] pt-[25px] pb-[8px] md:max-w-[260px] h-[43px] leading-[135%] uppercase">
+                      <div className="font-ivy font-regular md:mx-0 text-[24px] sm:text-[28px] md:text-[32px] pl-[20px] pt-[25px] pb-[8px] md:max-w-[260px] h-[43px] leading-[135%] uppercase">
                         {item.title}
                       </div>
 
        <div
-  className={`font-tt text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full  overflomax-w-hidden break-words whitespace-pre-wrap transition-all duration-500 ease-in-out ${
+  className={`font-tt font-regular text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full  overflomax-w-hidden break-words whitespace-pre-wrap transition-all duration-500 ease-in-out ${
     hasHoveredMap[item.id]
       ? 'max-w-[835px] translate-x-[-50px]'
       : 'max-w-[935px] translate-x-[20px]'
@@ -131,8 +131,8 @@ const DropdownBtns = ({ items }) => {
 
 
                         <div
-                          className={`absolute right-0 flex gap-2 font-tt text-center items-center transition-all duration-700 ease-in-out ${hasHoveredMap[item.id]
-                            ? 'opacity-100 translate-x-[-150px]'
+                          className={`absolute right-0 flex gap-2 font-tt font-semibold text-center items-center transition-all duration-700 ease-in-out ${hasHoveredMap[item.id]
+                            ? 'opacity-100 translate-x-[-110px]'
                             : 'opacity-100 translate-x-0'
                             }`}
                         >
@@ -161,14 +161,14 @@ const DropdownBtns = ({ items }) => {
                         }));
                         setActiveIndex(null);
                       }}
-                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt font-regular underline cursor-pointer"
                     >
                       View Less
                     </Link>
                   ) : (
                     <Link
                       onClick={() => toggleShowMore(index)}
-                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt font-regular underline cursor-pointer"
                     >
                       View More
                     </Link>

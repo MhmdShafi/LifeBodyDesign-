@@ -10,10 +10,10 @@ const CardSection = ({ teachers }) => {
     <div className='w-full max-w-[1920px] min-h-[1101px] md:px-[96px] lg:px-[192px] py-[96px] gap-[64px]  mx-auto'>
       {/* Title Section */}
       <div className="w-full max-w-[603px] min-h-[128px] mb-[64px] text-[#474747] gap-4 mx-auto text-center whitespace-nowrap">
-        <h1 className="w-full font-ivy font-normal text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[135%]">
+        <h1 className="w-full font-ivy font-regular text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[135%]">
           Your LIFEBODY Teachers
         </h1>
-        <p className="w-full font-tt font-normal text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[150%]">
+        <p className="w-full font-tt font-regular text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[150%]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </p>
       </div>
@@ -50,8 +50,8 @@ const CardSection = ({ teachers }) => {
                 className='w-full aspect-square rounded-[16px] bg-[#D9D9D9] object-cover'
               />
               <div className='min-h-[167px] flex flex-col gap-4 mt-6 text-[#474747]'>
-                <h2 className='text-[24px] sm:text-[28px] md:text-[32px] leading-[135%] font-ivy font-normal'>{teacher.name}</h2>
-                <p className='font-tt font-normal text-[24px] leading-[150%]'>{teacher.desc}</p>
+                <h2 className='text-[24px] sm:text-[28px] md:text-[32px] leading-[135%] font-ivy font-regular'>{teacher.name}</h2>
+                <p className='font-tt font-regular text-[24px] leading-[150%]'>{teacher.desc}</p>
               </div>
             </div>
           </SwiperSlide>

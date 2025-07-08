@@ -29,13 +29,13 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center w-full max-w-[495px] gap-[16px] sm:gap-[20px] md:gap-[24px] mx-auto mt-[24px] sm:mt-[32px] lg:mt-[40px]">
-              <button className="w-full max-w-[235.5px] h-[53px] px-[32px] py-[8px] rounded-[8px] border border-[#474747] hover:bg-white text-black text-lg hover:text-[#E05F40] hover:border-[#E05F40] transition-all duration-300">
+              <button className="w-full max-w-[235.5px] font-tt font-normal h-[53px] px-[32px] py-[8px] rounded-[8px] border border-[#474747] hover:bg-white text-black text-lg hover:text-[#E05F40] hover:border-[#E05F40] transition-all duration-300">
                 Explore Class
               </button>
 
               <button className="relative overflow-hidden w-full max-w-[235.5px] h-[53px] bg-[#474747] text-white rounded-lg text-lg group">
                 <span className="absolute top-0 left-0 w-0 h-full bg-[#E05F40] group-hover:w-full transition-all duration-1000 ease-in-out z-0"></span>
-                <span className="relative z-10 font-normal whitespace-nowrap">
+                <span className="relative z-10 font-tt font-normal whitespace-nowrap">
                   Book a Tour
                 </span>
               </button>
