@@ -79,7 +79,7 @@ const Header = () => {
                     className="
     relative 
     overflow-hidden 
-    w-[140px] h-[48px] 
+    w-[140px] h-[51px] 
     sm:w-[160px] sm:h-[51px] 
     md:w-[180px] md:h-[54px] 
     pt-[10px] pr-[24px] pb-[10px] pl-[24px] 

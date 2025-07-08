@@ -49,7 +49,7 @@ const CardSection = ({ teachers }) => {
                 alt={teacher.name}
                 className='w-full aspect-square rounded-[16px] bg-[#D9D9D9] object-cover'
               />
-              <div className='min-h-[167px] flex flex-col gap-4 mt-6 px-4 text-[#474747]'>
+              <div className='min-h-[167px] flex flex-col gap-4 mt-6 text-[#474747]'>
                 <h2 className='text-[24px] sm:text-[28px] md:text-[32px] leading-[135%] font-ivy font-normal'>{teacher.name}</h2>
                 <p className='font-tt font-normal text-[24px] leading-[150%]'>{teacher.desc}</p>
               </div>
