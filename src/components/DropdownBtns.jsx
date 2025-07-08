@@ -10,9 +10,9 @@ const DropdownBtns = ({ items }) => {
 
   const splitTextIntoThreeLines = (text) => {
   const words = text.split(' ');
-  const line1 = words.slice(0, 19).join(' ');
-  const line2 = words.slice(19, 39).join(' ');
-  const line3 = words.slice(39).join(' ');
+  const line1 = words.slice(0, 15).join(' ');
+  const line2 = words.slice(15, 29).join(' ');
+  const line3 = words.slice(29).join(' ');
   return `${line1}\n${line2}\n${line3}`;
 };
 
@@ -29,7 +29,7 @@ const DropdownBtns = ({ items }) => {
   };
 
   return (
-    <div className="w-full w-[1920px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 space-y-10 bg-white">
+    <div className="w-full  max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 space-y-10 bg-white">
       {items.map((section, index) => (
         <div
           key={index}
@@ -37,18 +37,18 @@ const DropdownBtns = ({ items }) => {
           onMouseEnter={() => setCursorPointer(true)}
           onMouseLeave={() => setCursorPointer(false)}
           className={`group ${cursorPointer ? 'cursor-pointer' : 'cursor-default'}
-            w-full w-[1536px] min-h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 border border-[#E5E5E5] space-y-10 transition-colors duration-500 ease-in-out ${activeIndex === index ? 'bg-white' : 'hover:bg-[#FAFAF5] bg-white'
+            w-full  max-w-[1536px] min-h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 border border-[#E5E5E5] space-y-10 transition-colors duration-500 ease-in-out ${activeIndex === index ? 'bg-white' : 'hover:bg-[#FAFAF5] bg-white'
             }`}
         >
           <div className="group contents">
             <h2
-              className={`text-center w-full mx-auto whitespace-nowrap leading-[135%] font-ivy text-[32px] sm:text-[40px] lg:text-[48px]
+              className={`text-center w-full  mx-auto whitespace-nowrap leading-[135%] font-ivy text-[32px] sm:text-[40px] lg:text-[48px]
                 transition-all duration-700 delay-300 ease-in-out transform ${section.title === 'Levels'
-                  ? 'w-[125px] h-[65px]'
-                  : 'w-[345px] h-[65px]'
+                  ? 'max-w-[125px] h-[65px]'
+                  : 'max-w-[345px] h-[65px]'
                 }
                 group-hover:font-tt group-hover:text-[24px]
-                group-hover:w-[153px] group-hover:h-[36px]
+                group-hover:max-w-[153px] group-hover:h-[36px]
                 group-hover:-translate-y-6 group-hover:translate-x-6`}
             >
               {section.title}
@@ -57,14 +57,14 @@ const DropdownBtns = ({ items }) => {
             <Link
               to="#"
               className={`block text-center ${section.title === 'Levels'
-                ? 'w-[213px] h-[36px]'
-                : 'w-[306px] h-[36px]'
-                } whitespace-nowrap w-full text-[#474747] font-tt text-[24px] leading-[150%] px-4 py-2 rounded cursor-pointer mx-auto
+                ? 'max-w-[213px] h-[36px]'
+                : 'max-w-[306px] h-[36px]'
+                } whitespace-nowrap w-full  text-[#474747] font-tt text-[24px] leading-[150%] px-4 py-2 rounded cursor-pointer mx-auto
                 transition-all duration-700 delay-500 ease-in-out transform ${section.title === 'Levels'
-                  ? 'w-[458px] h-[65px]'
-                  : 'w-[679px] h-[65px]'
+                  ? 'max-w-[458px] h-[65px]'
+                  : 'max-w-[679px] h-[65px]'
                 }
-                group-hover:font-ivy group-hover:text-[48px] group-hover:leading-[135%] group-hover:w-[679px] group-hover:h-[65px]
+                group-hover:font-ivy group-hover:text-[48px] group-hover:leading-[135%] group-hover:max-w-[679px] group-hover:h-[65px]
                 group-hover:-translate-y-4 group-hover:translate-x-4`}
             >
               <span className="capitalize">
@@ -79,7 +79,7 @@ const DropdownBtns = ({ items }) => {
                 (item) => (
                   <div key={item.id}>
                     <div
-                      className={`cursor-default w-full w-[1536px] h-auto py-[20px] flex flex-col md:flex-row items-center md:items-start justify-between md:gap-12 rounded-[16px] z-20 shadow-md ${hasHoveredMap[item.id] ? 'bg-[#FAFAF5]' : 'bg-white'
+                      className={`cursor-default w-full  max-w-[1536px] h-auto py-[20px] flex flex-col md:flex-row items-center md:items-start justify-between md:gap-12 rounded-[16px] z-20 shadomax-w-md ${hasHoveredMap[item.id] ? 'bg-[#FAFAF5]' : 'bg-white'
                         } transition-colors duration-500 ease-in-out`}
                       onMouseEnter={() => {
                         setCursorPointer(false);
@@ -97,15 +97,15 @@ const DropdownBtns = ({ items }) => {
                       }}
                     >
 
-                      <div className="font-ivy md:mx-0 text-[24px] sm:text-[28px] md:text-[32px] pl-[20px] pt-[25px] pb-[8px] md:w-[260px] h-[43px] leading-[135%] uppercase">
+                      <div className="font-ivy md:mx-0 text-[24px] sm:text-[28px] md:text-[32px] pl-[20px] pt-[25px] pb-[8px] md:max-w-[260px] h-[43px] leading-[135%] uppercase">
                         {item.title}
                       </div>
 
        <div
-  className={`font-tt text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full overflow-hidden break-words whitespace-pre-wrap transition-all duration-500 ease-in-out ${
+  className={`font-tt text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full  overflomax-w-hidden break-words whitespace-pre-wrap transition-all duration-500 ease-in-out ${
     hasHoveredMap[item.id]
-      ? 'w-[835px] translate-x-[-10px]'
-      : 'w-[935px] translate-x-[20px]'
+      ? 'max-w-[835px] translate-x-[-50px]'
+      : 'max-w-[935px] translate-x-[20px]'
   }`}
 >
   {splitTextIntoThreeLines(item.description)}
@@ -114,7 +114,7 @@ const DropdownBtns = ({ items }) => {
 
 
 
-                      <div className="relative md:w-[200px] h-auto pt-[10px] flex items-center justify-end">
+                      <div className="relative md:max-w-[200px] h-auto pt-[10px] flex items-center justify-end">
                         <div
                           className={`mr-2 justify-between items-center justify-center transition-opacity duration-700 ease-in-out ${hasHoveredMap[item.id]
                             ? 'opacity-100'
@@ -124,7 +124,7 @@ const DropdownBtns = ({ items }) => {
                           <img
                             src="/image/icon3.png"
                             alt="Icon"
-                            className="w-[64px] h-[64px] object-contain"
+                            className="max-w-[64px] h-[64px] object-contain"
                           />
                         </div>
 
@@ -151,7 +151,7 @@ const DropdownBtns = ({ items }) => {
               )}
 
               {section.items.length > 5 && (
-                <div className="w-full w-[1536px] mx-auto text-center mt-6">
+                <div className="w-full  max-w-[1536px] mx-auto text-center mt-6">
                   {showMoreMap[index] ? (
                     <Link
                       onClick={() => {
@@ -161,14 +161,14 @@ const DropdownBtns = ({ items }) => {
                         }));
                         setActiveIndex(null);
                       }}
-                      className="text-[#E05F40] w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
                     >
                       View Less
                     </Link>
                   ) : (
                     <Link
                       onClick={() => toggleShowMore(index)}
-                      className="text-[#E05F40] w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
+                      className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt underline cursor-pointer"
                     >
                       View More
                     </Link>
