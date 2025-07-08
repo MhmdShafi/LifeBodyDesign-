@@ -74,7 +74,7 @@ const Carousel = ({ items }) => {
     </div>
 
     <div className="flex flex-wrap gap-4">
-     <button
+   <button
   className="
     relative overflow-hidden 
     px-8 py-4 
@@ -86,7 +86,7 @@ const Carousel = ({ items }) => {
     group hover:border-[#E05F40]
   "
 >
-  {/* Left-to-right fill on hover */}
+  {/* Fill animation */}
   <span
     className="
       absolute top-0 left-0 w-0 h-full 
@@ -97,7 +97,7 @@ const Carousel = ({ items }) => {
     "
   ></span>
 
-  {/* Text with color transition */}
+  {/* Text */}
   <span
     className="
       relative z-10 
@@ -105,25 +105,13 @@ const Carousel = ({ items }) => {
       text-[16px] md:text-[20px] 
       text-[#474747] 
       group-hover:text-[#E05F40] 
-     
       transition-colors duration-300
     "
   >
     More Detail
   </span>
-
-  {/* Border color change on hover */}
-  <div
-    className="
-      absolute inset-0 
-      rounded-[8px] 
-      pointer-events-none 
-      group-hover:border-[#E05F40] 
-      border border-transparent 
-      transition-colors duration-300
-    "
-  ></div>
 </button>
+
 
      <button
   className="

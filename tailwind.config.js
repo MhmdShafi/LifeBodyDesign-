@@ -6,8 +6,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        ivy: ['"Ivy Mode"', 'sans-serif'],
+        indie: ['"Indie Flower"', 'cursive'],
         tt: ['"TT Commons"', 'sans-serif'],
+
       },
     },
   },

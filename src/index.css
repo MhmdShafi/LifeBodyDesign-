@@ -1,9 +1,23 @@
-@font-face{
+@font-face {
   font-family: Ivy Mode;
   font-weight: 400;
-  src:url("/fonts/ivy-mode-regular.ttf");
-  
+  src: url("../public/fonts/ivy-mode/IvyMode-Regular.ttf");
 }
+
+@font-face {
+  font-family: Ivy Mode;
+  font-weight: 600;
+  src: url("../public/fonts/ivy-mode/IvyMode-SemiBold.ttf");
+}
+
+
+@font-face {
+  font-family: Ivy Mode;
+  font-weight: 700;
+  src: url("../public/fonts/ivy-mode/IvyMode-Bold.ttf");
+}
+
+
 /* styles.css or App.css */
 @font-face {
   font-family: 'TT Commons';
@@ -12,11 +26,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/IndieFlower-Regular.ttf') format('truetype');
+}
+
+
 
 @import "tailwindcss";
 
-@theme{
-  --font-ivy:Ivy-Mode,"sans-sarif";
-  --font-tt:TT-Commons,"sans-sarif";
+@theme {
+  --font-ivy: Ivy Mode;
+  --font-tt: TT-Commons, "sans-sarif";
+  --font-indie: IndieFlower, "sans-sarif";
 }
-
