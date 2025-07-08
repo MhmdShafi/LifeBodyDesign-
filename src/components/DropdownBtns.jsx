@@ -106,7 +106,7 @@ const DropdownBtns = ({ items }) => {
                         {item.description}
                       </div>
 
-                      <div className="relative md:w-[200px] h-[64px] pt-[20px] flex items-center justify-end">
+                      <div className="relative md:w-[200px] h-auto pt-[20px] flex items-center justify-end">
                         <div
                           className={`mr-2 justify-between items-center justify-center transition-opacity duration-700 ease-in-out ${
                             hasHoveredMap[item.id]
