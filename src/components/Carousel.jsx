@@ -73,7 +73,7 @@ const Carousel = ({ items }) => {
 
             <div className="flex flex-wrap gap-4 mt-6">
               <button
-                className="
+                className="cursor-pointer
     relative overflow-hidden 
     px-8 py-4 
     w-full sm:w-auto 
@@ -112,7 +112,7 @@ const Carousel = ({ items }) => {
 
 
               <button
-                className="
+                className=" cursor-pointer
     relative overflow-hidden 
     px-8 py-4 
     rounded-[8px] 
@@ -164,7 +164,7 @@ const Carousel = ({ items }) => {
         {/* Prev/Next Buttons */}
         <div className="w-full flex justify-center mt-[50px] pb-[96px]">
           <div className="flex w-[176px] h-[68px] gap-[20px] md:gap-[40px]">
-            <button onClick={handlePrev} className="w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
+            <button onClick={handlePrev} className="cursor-pointer w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
               <svg
                 width="40"
                 height="40"
@@ -190,7 +190,7 @@ const Carousel = ({ items }) => {
               </svg>
             </button>
 
-            <button onClick={handleNext} className="w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
+            <button onClick={handleNext} className="cursor-pointer w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
               <svg
                 width="40"
                 height="40"

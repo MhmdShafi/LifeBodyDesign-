@@ -60,7 +60,7 @@ const CardSection = ({ teachers }) => {
 
       {/* Custom Navigation Buttons */}
       <div className='w-full max-w-[178px] min-h-[66px] gap-[40px] flex justify-center mx-auto text-[#474747]'>
-          <button  className="custom-prev w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
+          <button  className="cursor-pointer custom-prev w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
   <svg
     width="40"
     height="40"
@@ -86,7 +86,7 @@ const CardSection = ({ teachers }) => {
   </svg>
 </button>
 
-    <button  className="custom-next w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
+    <button  className="cursor-pointer custom-next w-[68px] h-[68px] rounded-[16px] bg-[#EAE8E2] flex items-center justify-center group hover:bg-[#474747] transition-colors duration-300">
   <svg
     width="40"
     height="40"

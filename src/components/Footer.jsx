@@ -65,14 +65,14 @@ const Footer = () => {
       </div>
 
       {/* Nav links */}
-      <div className='w-full max-w-[1536px] min-h-[164px] flex flex-col gap-8 px-4 sm:px-6 lg:px-8 mx-auto'>
+      <div className='relative z-10 w-full max-w-[1536px] min-h-[164px] flex flex-col gap-8 px-4 sm:px-6 lg:px-8 mx-auto'>
 
         <div className="w-full max-w-[1536px] h-[76px] flex items-center px-4 sm:px-8 lg:px-[96px] mx-auto">
           {/* Left nav */}
           <div className="flex items-center justify-start gap-[32px] text-[#525252] flex-1 min-w-0">
-            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[83px] h-[30px] flex items-center justify-center">PRODUCT</Link>
-            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[86px] h-[30px] flex items-center justify-center">FEATURES</Link>
-            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[103px] h-[30px] flex items-center justify-center">RESOURCES</Link>
+            <Link to="#" className="cursor-pointer font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[83px] h-[30px] flex items-center  justify-center">PRODUCT</Link>
+            <Link to="#" className="cursor-pointer font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[86px] h-[30px] flex items-center justify-center">FEATURES</Link>
+            <Link to="#" className="cursor-pointer font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap w-[103px] h-[30px] flex items-center justify-center">RESOURCES</Link>
           </div>
 
           {/* Logo */}
@@ -82,9 +82,10 @@ const Footer = () => {
 
           {/* Right nav */}
           <div className="flex items-center justify-end gap-[32px] text-[#525252] flex-1 min-w-0">
-            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">ABOUT</Link>
-            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">BLOG</Link>
-            <Link className="font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">SUPPORT</Link>
+            <Link to="#" className="cursor-pointer font-tt font-medium text-[16px]  md:text-[18px] uppercase whitespace-nowrap"
+            >ABOUT</Link>
+            <Link to="#" className="cursor-pointer font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">BLOG</Link>
+            <Link to="#" className="cursor-pointer font-tt font-medium text-[16px] md:text-[18px] uppercase whitespace-nowrap">SUPPORT</Link>
           </div>
         </div>
 
