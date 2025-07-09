@@ -15,7 +15,7 @@ const HeroSection = () => {
 
       <div className="relative z-10">
         <div className="absolute top-[120px] sm:top-[200px] lg:top-[286px] w-full max-w-[1797px] sm:px-8 lg:px-[62px] mx-auto">
-            <h1 className="font-normal font-ivy max-w-[1797px] text-[clamp(48px,15vw,400px)] leading-[100%] tracking-[0] text-center uppercase text-[#474747] pt-[10px] opacity-[0.05] whitespace-nowrap">
+            <h1 className="font-normal font-ivy  w-[1797px] text-[clamp(48px,15vw,400px)] leading-[100%] tracking-[0] text-center uppercase text-[#474747] pt-[10px] opacity-[0.05] whitespace-nowrap">
     Lifebody
   </h1>
 

@@ -29,7 +29,7 @@ const DropdownBtns = ({ items }) => {
           onMouseEnter={() => setCursorPointer(true)}
           onMouseLeave={() => setCursorPointer(false)}
           className={`group ${cursorPointer ? 'cursor-pointer' : 'cursor-default'}
-            w-full  max-w-[1536px] min-h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 border border-[#E5E5E5] space-y-10 transition-colors duration-500 ease-in-out ${activeIndex === index ? 'bg-white' : 'hover:bg-[#FAFAF5] bg-white'
+            w-full  max-w-[1536px] h-[213px] rounded-[16px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-[50px] pb-[24px] border border-[#E5E5E5] space-y-10 transition-colors duration-500 ease-in-out ${activeIndex === index ? 'bg-white' : 'hover:bg-[#FAFAF5] bg-white'
             }`}
         >
           <div className="group contents">
@@ -40,18 +40,19 @@ const DropdownBtns = ({ items }) => {
                   : 'max-w-[345px] h-[65px]'
                 }
                 group-hover:font-tt font-regular group-hover:text-[24px]
+                group-hover:pt-[30px] group-hover:pb-[30px]
                 group-hover:max-w-[153px] group-hover:h-[36px]
                 group-hover:-translate-y-6 group-hover:translate-x-6`}
             >
-             {section.title === 'Levels' ? (
-  section.title
-) : (
-  <>
-    <span className="group-hover:font-tt">{section.title.split('&')[0]}</span>
-    <span className="group-hover:font-ivy mx-1">&</span>
-    <span className="group-hover:font-tt">{section.title.split('&')[1]}</span>
-  </>
-)}
+              {section.title === 'Levels' ? (
+                section.title
+              ) : (
+                <>
+                  <span className="group-hover:font-tt">{section.title.split('&')[0]}</span>
+                  <span className="group-hover:font-ivy mx-1">&</span>
+                  <span className="group-hover:font-tt">{section.title.split('&')[1]}</span>
+                </>
+              )}
 
             </h2>
 
@@ -68,18 +69,18 @@ const DropdownBtns = ({ items }) => {
                 group-hover:font-ivy font-regular group-hover:text-[48px] group-hover:leading-[135%] group-hover:max-w-[679px] group-hover:h-[65px]
                 group-hover:-translate-y-4 group-hover:translate-x-4`}
             >
-        <span className="capitalize">
-  {activeIndex === index ? 'Click to Minimise ' : 'Click to explore '}
-  {section.title === 'Levels' ? (
-    section.title.toLowerCase()
-  ) : (
-    <>
-      <span className="font-ivy font-regular">{section.title.split('&')[0].toLowerCase()}</span>
-      <span className="font-ivy mx-1">&</span>
-      <span className="font-ivy font-regular">{section.title.split('&')[1].toLowerCase()}</span>
-    </>
-  )}
-</span>
+              <span className="capitalize">
+                {activeIndex === index ? 'Click to Minimise ' : 'Click to explore '}
+                {section.title === 'Levels' ? (
+                  section.title.toLowerCase()
+                ) : (
+                  <>
+                    <span className="font-ivy font-regular">{section.title.split('&')[0].toLowerCase()}</span>
+                    <span className="font-ivy mx-1">&</span>
+                    <span className="font-ivy font-regular">{section.title.split('&')[1].toLowerCase()}</span>
+                  </>
+                )}
+              </span>
 
 
             </Link>
@@ -113,16 +114,16 @@ const DropdownBtns = ({ items }) => {
                         {item.title}
                       </div>
 
-                        <div
-                          className={`font-tt font-regular text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full whitespace-normal break-normal transition-all duration-500 ease-in-out ${hasHoveredMap[item.id]
-                              ? 'max-w-[835px] h-[87px] translate-x-[-80px]'
-                              : 'max-w-[935px] h-[87px] translate-x-0'
-                            }`}
-                        >
+                      <div
+                        className={`font-tt font-regular text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full whitespace-normal break-normal transition-all duration-500 ease-in-out ${hasHoveredMap[item.id]
+                          ? 'max-w-[835px] h-[87px] translate-x-[-80px]'
+                          : 'max-w-[935px] h-[87px] translate-x-0'
+                          }`}
+                      >
                         {item.description}
-                        </div>
+                      </div>
 
-                      
+
                       <div className="relative md:max-w-[200px] h-auto pt-[10px] flex items-center justify-end">
                         <div
                           className={`mr-2 justify-between items-center  transition-opacity duration-700 ease-in-out ${hasHoveredMap[item.id]
