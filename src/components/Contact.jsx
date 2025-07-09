@@ -7,7 +7,7 @@ const Contact = () => {
   className="w-full max-w-[1920px] mx-auto px-4 md:px-[96px] py-[96px] bg-white flex flex-col lg:flex-row gap-[24px] justify-center items-center   border-[#E5E5E5]"
 >
   
-<div className="group relative w-full max-w-[756px] min-h-[250px] p-[24px] rounded-[16px] border border-[#E5E5E5] flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#FAFAF5]">
+<div className="group relative w-full max-w-[756px] min-h-[250px] p-[24px] rounded-[16px] border border-[#E5E5E5] flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#FAFAF5] hover:cursor-pointer">
 
   <div className="absolute inset-0 flex flex-col items-center text-center gap-[10px] top-[24px] transition-all duration-500 ease-in-out 
     group-hover:opacity-0 group-hover:pointer-events-none">
@@ -43,7 +43,7 @@ const Contact = () => {
   </div>
 </div>
 
-<div className="group relative w-full max-w-[756px] min-h-[250px] p-[24px]  gap-[24px] rounded-[16px] border border-[#E5E5E5] flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#FAFAF5]">
+<div className="group relative w-full max-w-[756px] min-h-[250px] p-[24px]  gap-[24px] rounded-[16px] border border-[#E5E5E5] flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#FAFAF5] hover:cursor-pointer">
 
   <div className="absolute inset-0 flex flex-col items-center text-center gap-[16px] top-[24px] transition-all duration-500 ease-in-out 
     group-hover:opacity-0 group-hover:pointer-events-none">

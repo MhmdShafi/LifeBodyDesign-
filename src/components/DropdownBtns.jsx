@@ -165,14 +165,14 @@ const DropdownBtns = ({ items }) => {
                           setShowMoreMap((prev) => ({ ...prev, [index]: false }));
                           setActiveIndex(null);
                         }}
-                        className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt font-regular underline cursor-pointer"
+                        className="text-[#E05F40] w-[120px] h-[80px] text-sm font-tt font-regular underline cursor-pointer"
                       >
                         View Less
                       </Link>
                     ) : (
                       <Link
                         onClick={() => toggleShowMore(index)}
-                        className="text-[#E05F40] max-w-[100px] h-[60px] text-sm font-tt font-regular underline cursor-pointer"
+                        className="text-[#E05F40] w-[120px] h-[80px] text-sm font-tt font-regular underline cursor-pointer"
                       >
                         View More
                       </Link>
