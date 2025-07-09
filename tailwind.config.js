@@ -6,8 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        indie: ['"Indie Flower"', 'cursive'],
-        tt: ['"TT Commons"', 'sans-serif'],
+        fallback: ['Arial', 'sans-serif'],
 
       },
     },

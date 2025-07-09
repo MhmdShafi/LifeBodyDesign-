@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+   const [fontClass] = useState("font-tt font-medium");
     return (
         <header className="w-[25%] sm:w-full max-w-[1920px] h-auto bg-white flex flex-wrap lg:flex-nowrap items-center justify-between gap-x-4 px-4 sm:px-6 lg:px-[96px] mx-auto
 ">
@@ -30,7 +31,11 @@ const Header = () => {
             >
                 <Link to="#" className="item-center font-tt font-medium text-[18px] text-[#525252] uppercase">ABOUT</Link>
                 <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">STUDIO</Link>
-                <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">TIMETABLE / BOOK</Link>
+                 <Link to="#" className="text-[18px] text-[#525252] uppercase">
+      <span className={fontClass}>TIMETABLE</span>{" "}
+      <span className="font-normal">/</span>{" "}
+      <span className={fontClass}>BOOK</span>
+    </Link>
                 <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">ON DEMAND</Link>
                 <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">PROGRAMS</Link>
                 <Link to="#" className="font-tt font-medium text-[18px] text-[#525252] uppercase">VIDEOS</Link>

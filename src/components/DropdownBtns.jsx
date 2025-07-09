@@ -8,14 +8,6 @@ const DropdownBtns = ({ items }) => {
   const [hasHoveredMap, setHasHoveredMap] = useState({});
   const [cursorPointer, setCursorPointer] = useState(false);
 
-  const splitTextIntoThreeLines = (text) => {
-  const words = text.split(' ');
-  const line1 = words.slice(0, 15).join(' ');
-  const line2 = words.slice(15, 29).join(' ');
-  const line3 = words.slice(29).join(' ');
-  return `${line1}\n${line2}\n${line3}`;
-};
-
 
   const toggleDropdown = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -51,7 +43,16 @@ const DropdownBtns = ({ items }) => {
                 group-hover:max-w-[153px] group-hover:h-[36px]
                 group-hover:-translate-y-6 group-hover:translate-x-6`}
             >
-              {section.title}
+             {section.title === 'Levels' ? (
+  section.title
+) : (
+  <>
+    <span className="group-hover:font-tt">{section.title.split('&')[0]}</span>
+    <span className="group-hover:font-ivy mx-1">&</span>
+    <span className="group-hover:font-tt">{section.title.split('&')[1]}</span>
+  </>
+)}
+
             </h2>
 
             <Link
@@ -67,9 +68,20 @@ const DropdownBtns = ({ items }) => {
                 group-hover:font-ivy font-regular group-hover:text-[48px] group-hover:leading-[135%] group-hover:max-w-[679px] group-hover:h-[65px]
                 group-hover:-translate-y-4 group-hover:translate-x-4`}
             >
-              <span className="capitalize">
-                Click to explore {section.title.toLowerCase()}
-              </span>
+        <span className="capitalize">
+  {activeIndex === index ? 'Click to Minimise ' : 'Click to explore '}
+  {section.title === 'Levels' ? (
+    section.title.toLowerCase()
+  ) : (
+    <>
+      <span className="font-ivy font-regular">{section.title.split('&')[0].toLowerCase()}</span>
+      <span className="font-ivy mx-1">&</span>
+      <span className="font-ivy font-regular">{section.title.split('&')[1].toLowerCase()}</span>
+    </>
+  )}
+</span>
+
+
             </Link>
           </div>
 
@@ -77,9 +89,9 @@ const DropdownBtns = ({ items }) => {
             <>
               {(showMoreMap[index] ? section.items : section.items.slice(0, 5)).map(
                 (item) => (
-                  <div key={item.id}>
+                  <div key={item.id} className='gap-[48px]'>
                     <div
-                      className={`cursor-default w-full  max-w-[1536px] h-auto py-[20px] flex flex-col md:flex-row items-center md:items-start justify-between md:gap-12 rounded-[16px] z-20 shadomax-w-md ${hasHoveredMap[item.id] ? 'bg-[#FAFAF5]' : 'bg-white'
+                      className={`cursor-default w-full  max-w-[1536px]  py-[25px] flex flex-col md:flex-row items-center md:items-start justify-between   rounded-[16px] z-20 shadomax-w-md ${hasHoveredMap[item.id] ? 'bg-[#FAFAF5]' : 'bg-white'
                         } transition-colors duration-500 ease-in-out`}
                       onMouseEnter={() => {
                         setCursorPointer(false);
@@ -101,22 +113,19 @@ const DropdownBtns = ({ items }) => {
                         {item.title}
                       </div>
 
-       <div
-  className={`font-tt font-regular text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full  overflomax-w-hidden break-words whitespace-pre-wrap transition-all duration-500 ease-in-out ${
-    hasHoveredMap[item.id]
-      ? 'max-w-[835px] translate-x-[-50px]'
-      : 'max-w-[935px] translate-x-[20px]'
-  }`}
->
-  {splitTextIntoThreeLines(item.description)}
-</div>
+                        <div
+                          className={`font-tt font-regular text-[18px] sm:text-[20px] md:text-[24px] text-[#404040] leading-[150%] w-full whitespace-normal break-normal transition-all duration-500 ease-in-out ${hasHoveredMap[item.id]
+                              ? 'max-w-[835px] h-[87px] translate-x-[-80px]'
+                              : 'max-w-[935px] h-[87px] translate-x-0'
+                            }`}
+                        >
+                        {item.description}
+                        </div>
 
-
-
-
+                      
                       <div className="relative md:max-w-[200px] h-auto pt-[10px] flex items-center justify-end">
                         <div
-                          className={`mr-2 justify-between items-center justify-center transition-opacity duration-700 ease-in-out ${hasHoveredMap[item.id]
+                          className={`mr-2 justify-between items-center  transition-opacity duration-700 ease-in-out ${hasHoveredMap[item.id]
                             ? 'opacity-100'
                             : 'opacity-0'
                             }`}
@@ -131,17 +140,41 @@ const DropdownBtns = ({ items }) => {
 
 
                         <div
-                          className={`absolute right-0 flex gap-2 font-tt font-semibold text-center items-center transition-all duration-700 ease-in-out ${hasHoveredMap[item.id]
-                            ? 'opacity-100 translate-x-[-110px]'
+                          className={`absolute right-0 flex   text-center items-center transition-all duration-700 ease-in-out ${hasHoveredMap[item.id]
+                            ? 'opacity-100 translate-x-[-100px]'
                             : 'opacity-100 translate-x-0'
                             }`}
                         >
-                          <span className="text-[32px] sm:text-[36px] md:text-[40px] font-semibold">
-                            {item.price.split('/')[0]}
-                          </span>
-                          <span className="text-[18px] sm:text-[20px] md:text-[24px] font-normal">
-                            /{item.price.split('/')[1]}
-                          </span>
+
+
+                          {section.title === 'Levels' ? (
+                            <span className="text-[32px] font-tt sm:text-[36px] md:text-[40px] font-semibold">
+                              {item.price}
+                            </span>
+                          ) : (
+                            <>
+
+                              <span className="text-[32px] sm:text-[36px] md:text-[40px]">
+                                {item.price.split('/')[0].startsWith('$') ? (
+                                  <>
+                                    <span className="font-semibold">$</span>
+                                    <span className="font-tt font-semibold">
+                                      {item.price.split('/')[0].slice(1)}
+                                    </span>
+                                  </>
+                                ) : (
+                                  <span className="font-tt font-semibold">{item.price.split('/')[0]}</span>
+                                )}
+                              </span>
+
+                              <span className="text-[32px] font-semibold">/</span>
+                              <span className="font-tt font-medium text-[18px] sm:text-[20px] md:text-[24px]">
+                                {item.price.split('/')[1]}
+                              </span>
+                            </>
+                          )}
+
+
                         </div>
 
                       </div>
