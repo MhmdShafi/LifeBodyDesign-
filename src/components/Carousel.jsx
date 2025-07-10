@@ -35,15 +35,27 @@ const Carousel = ({ items }) => {
                   : 'w-[120px] h-[60px] opacity-80 scale-95' // shrink others
                 }`}
             >
-              <span
-                className={`flex items-center font-ivy font-regular justify-center text-center whitespace-nowrap transition-all duration-700 
-      ${index === currentIndex
-                    ? 'font-ivy font-regular max-w-[408px] h-[54px]  text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px]'
-                    : 'font-tt font-regular text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]'
-                  }`}
-              >
-                {item.title}
-              </span>
+             <span
+  className={`flex items-center justify-center text-center whitespace-nowrap transition-all duration-700 
+    ${index === currentIndex
+      ? 'font-ivy font-regular max-w-[408px] h-[54px] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px]'
+      : 'font-tt font-regular text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]'
+    }`}
+>
+  {
+    item.title.includes('&')
+      ? item.title.split('&').map((part, i, arr) => (
+          <React.Fragment key={i}>
+            {part}
+            {i < arr.length - 1 && (
+              <span className="font-ivy">&nbsp;&&nbsp;</span>
+            )}
+          </React.Fragment>
+        ))
+      : item.title
+  }
+</span>
+
             </Link>
 
 
