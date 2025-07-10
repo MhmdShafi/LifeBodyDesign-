@@ -39,7 +39,7 @@ const HeroSection = () => (
 
     {/* content (unchanged) */}
     <div className="relative z-10 sm:top-[120px] flex flex-col items-center">
-     <h1 className="font-ivy font-normal w-full lg:w-[1797px] lg:mx-auto uppercase text-[#474747] opacity-[0.05] leading-[100%] md:pl-[45px] whitespace-nowrap mt-[120px] lg:mt-[150px] md:mt-[180px] text-[clamp(120px,20vw,400px)]">
+     <h1 className="font-ivy font-normal w-full lg:max-w-[1797px] lg:mx-auto uppercase text-[#474747] opacity-[0.05] leading-[100%] md:pl-[45px] whitespace-nowrap mt-[120px] lg:mt-[150px] md:mt-[180px] text-[clamp(120px,20vw,400px)]">
   Lifebody
 </h1>
 
@@ -63,11 +63,11 @@ const HeroSection = () => (
         </div>
       </div>
 
-      <div className="absolute bottom-[40px] left-1/2 -translate-x-1/2 sm:translate-y-[180px] md:translate-y-[-50px] flex flex-col items-center gap-[20px] text-center w-full max-w-[329px]">
-        <div className="w-[30px] h-[30px] flex items-center justify-center">
+      <div className="absolute bottom-[40px] left-1/2 -translate-x-1/2 sm:translate-y-[200px] md:translate-y-[-5px] flex flex-col items-center gap-[20px] text-center w-full max-w-[329px] h-[100px]">
+        <div className="w-[44px] h-4[40px] flex items-center justify-center">
           <img src="/image/Frame.png" alt="icon" />
         </div>
-        <span className="font-tt font-light text-[15px] leading-[60%] text-[#474747]">
+        <span className="font-tt font-light text-[15px] leading-[60%] max-w-[329px] text-[#474747]">
           LONDON PILATES STUDIO BARNES
         </span>
       </div>

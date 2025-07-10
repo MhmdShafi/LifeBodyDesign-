@@ -9,7 +9,7 @@ const Contact = () => {
   
 <div className="group relative w-full max-w-[756px] min-h-[250px] p-[24px] rounded-[16px] border border-[#E5E5E5] flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#FAFAF5] hover:cursor-pointer">
 
-  <div className="absolute inset-0 flex flex-col items-center text-center gap-[10px] top-[24px] transition-all duration-500 ease-in-out 
+  <div className="absolute inset-0 flex flex-col items-center text-center gap-[24px] top-[24px] transition-all duration-500 ease-in-out 
     group-hover:opacity-0 group-hover:pointer-events-none">
     
     <div className="relative w-[44px] h-[44px] ml-[-6px]">
