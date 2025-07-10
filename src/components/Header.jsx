@@ -68,6 +68,7 @@ const Header = () => {
     text-[#474747]
     transition-colors duration-300
     group-hover:text-[#E05F40]
+    text-[18px]
   ">
             Login
           </span>
@@ -97,6 +98,7 @@ const Header = () => {
       absolute top-0 left-0 w-0 h-full 
       bg-[#E05F40] 
       group-hover:w-full 
+      text-[18px]
       transition-all duration-1000 ease-in-out 
       z-0
     "
