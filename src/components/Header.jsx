@@ -64,7 +64,6 @@ const Header = () => {
   "
         >
           <span className="
-   pt-[3px]
     font-tt font-medium w-[40px] h-[27px]
     text-[#474747]
     transition-colors duration-300
@@ -82,7 +81,6 @@ const Header = () => {
     w-[140px] h-[51px] 
     sm:w-[160px] sm:h-[51px] 
     md:w-[180px] md:h-[51px] 
-    pt-[10px] pr-[24px] pb-[10px] pl-[24px] 
     sm:pt-[12px] sm:pr-[32px] sm:pb-[12px] sm:pl-[32px] 
     rounded-[8px] 
     bg-[#474747] 
