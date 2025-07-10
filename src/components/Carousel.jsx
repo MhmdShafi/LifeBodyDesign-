@@ -12,7 +12,7 @@ const Carousel = ({ items }) => {
 
   return (
     <div className='w-full bg-[#FAFAF5]'>
-      <div className="w-[25%] sm:w-full max-w-[1920px] h-auto gap-12 
+      <div className="w-[25%] sm:w-full max-w-[1920px] h-[993px] gap-[48px]
   pt-12 px-4 
   sm:px-8 sm:pt-20 
   md:px-20 
@@ -22,7 +22,7 @@ const Carousel = ({ items }) => {
 
 
         {/* Top Nav Buttons */}
-        <div className='w-full max-w-[1536px] h-auto flex justify-between rounded-[12px] p-1 sm:p-2 md:p-4w-[1536px] h-[102px] flex items-center justify-between rounded-[12px] p-[4px]'>
+        <div className='w-full max-w-[1536px]  flex justify-between rounded-[12px] p-1 sm:p-2 md:p-4w-[1536px] h-[102px] flex items-center justify-between rounded-[12px] p-[4px]'>
           {items.map((item, index) => (
             <Link
               key={item.id}
@@ -64,26 +64,38 @@ const Carousel = ({ items }) => {
         </div>
 
         {/* Two Columns Side by Side */}
-        <div className="flex flex-wrap justify-between items-start mt-12 gap-6 max-w-[1536px] w-full">
+        <div className="flex flex-wrap justify-between items-start  gap-[24px] max-w-[1536px] w-full">
           {/* Left Side Content */}
           <div className="w-full max-w-[756px] md:w-[48%] h-auto md:h-[535px]  flex flex-col gap-[32px]">
-            <div className="max-w-[628px] h-[101px]">
+            <div className="max-w-[628px] h-[101px] pl-[64px] gap-[8px]">
               <p className="font-tt font-regular  max-w-[628px] h-[33px] text-[16px] md:text-[18px] leading-[150%]">
-                {currentItem.subtitle}
+                 {
+   currentItem.subtitle.includes('#')
+      ? currentItem.subtitle.split('#').map((part, i, arr) => (
+          <React.Fragment key={i}>
+            {part}
+            {i < arr.length - 1 && (
+              <span className="font-ivy font-regular text-black">#</span>
+            )}
+          </React.Fragment>
+        ))
+      : currentItem.subtitle
+  }
+                
               </p>
               <h1 className="font-ivy font-regular text-[28px] max-w-[628px] h-[60px] md:text-[40px] text-[#474747] leading-[150%] ">
                 {currentItem.heading}
               </h1>
             </div>
 
-            <div className="max-w-[628px] h-[180px]">
-              <p className="font-tt font-regular text-[16px] md:text-[20px] leading-[150%] text-[#474747]">
+            
+              <p className="max-w-[628px] h-[180px] pl-[64px] font-tt font-regular text-[20px] md:text-[20px] leading-[150%] text-[#474747] tracking-[-1px]">
                 {currentItem.description}
                 <br /><br />{currentItem.extra}
               </p>
-            </div>
+            
 
-            <div className="flex flex-wrap gap-4 mt-6">
+            <div className="flex flex-wrap gap-[16px] pl-[64px] mt-[32px]">
               <button
                 className="cursor-pointer
     relative overflow-hidden 

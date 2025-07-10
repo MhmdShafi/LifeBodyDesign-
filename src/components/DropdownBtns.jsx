@@ -20,7 +20,7 @@ const DropdownBtns = ({ items }) => {
   };
 
   return (
-    <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 space-y-10 bg-white">
+    <div className="w-full max-w-[1920px] h-[658px] mx-auto px-4 sm:px-6 lg:px-[96px] pt-24 pb-24 space-y-10 bg-white">
       <div className="w-full max-w-[1632px] flex flex-col gap-[16px] rounded-[5px] rotate-0 opacity-100 p-[48px]">
         {items.map((section, index) => (
           <div key={index} >
@@ -63,15 +63,15 @@ const DropdownBtns = ({ items }) => {
                 <Link
                   to="#"
                   className={`block text-center ${section.title === 'Levels'
-                    ? 'max-w-[213px] h-[36px]'
-                    : 'max-w-[306px] h-[36px]'} whitespace-nowrap w-full text-[#474747] font-tt font-regular text-[24px] leading-[150%] px-4 py-2 rounded cursor-pointer mx-auto
+                    ? 'w-[213px] h-[36px]'
+                    : 'w-[306px] h-[36px]'} whitespace-nowrap w-full text-[#474747] font-tt font-regular text-[24px] leading-[150%] px-4 py-2 rounded cursor-pointer mx-auto
                     transition-all duration-700 delay-500 ease-in-out transform ${section.title === 'Levels'
                       ? 'max-w-[458px] h-[65px]'
                       : 'max-w-[679px] h-[65px]'}
                     group-hover:font-ivy font-regular group-hover:text-[48px] group-hover:leading-[135%] group-hover:max-w-[679px] group-hover:h-[65px]
                     group-hover:-translate-y-4 group-hover:translate-x-4`}
                 >
-                  <span className="capitalize">
+                  <span className="capitalize w-full max-w-[306px] h-[36px]">
                     {activeIndex === index ? 'Click to Minimise ' : 'Click to explore '}
                     {section.title === 'Levels' ? (
                       section.title.toLowerCase()

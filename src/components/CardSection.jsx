@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 const CardSection = ({ teachers }) => {
   return (
     <div className='w-full bg-[#FAFAF5]'>
-    <div className='w-full max-w-[1920px] min-h-[1101px] md:px-[96px] lg:px-[192px] py-[96px] gap-[64px]  mx-auto'>
+    <div className='w-full max-w-[1920px] h-[1101px] md:px-[96px] lg:px-[192px] py-[96px] gap-[64px]  mx-auto'>
       {/* Title Section */}
       <div className="w-full max-w-[603px] min-h-[128px] mb-[64px] text-[#474747] gap-4 mx-auto text-center whitespace-nowrap">
         <h1 className="w-full font-ivy font-regular text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[135%]">
@@ -39,7 +39,7 @@ const CardSection = ({ teachers }) => {
             slidesPerView: 3,
           },
         }}
-        className="w-full max-w-[1278px] mx-auto mb-[64px]"
+        className="w-full max-w-[1278px] h-[585px] mx-auto mb-[64px]"
       >
         {teachers.map((teacher, index) => (
           <SwiperSlide key={index}>

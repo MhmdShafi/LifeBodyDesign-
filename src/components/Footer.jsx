@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
-    <footer className="relative w-full max-w-[1920px] min-h-[644px] gap-[96px] pt-[96px] pr-[192px] pb-[24px] pl-[192px]  flex flex-col items-center justify-center mx-auto">
+    <footer className="relative w-full max-w-[1920px] h-[644px] gap-[96px] pt-[96px] pr-[192px] pb-[24px] pl-[192px]  flex flex-col items-center justify-center mx-auto">
       {/* Background image */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img

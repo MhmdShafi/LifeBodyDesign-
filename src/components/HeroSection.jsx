@@ -39,7 +39,7 @@ const HeroSection = () => (
 
     {/* content (unchanged) */}
     <div className="relative z-10 sm:top-[120px] flex flex-col items-center">
-     <h1 className="font-ivy font-normal w-full lg:max-w-[1797px] lg:mx-auto uppercase text-[#474747] opacity-[0.05] leading-[100%] md:pl-[45px] whitespace-nowrap mt-[120px] lg:mt-[150px] md:mt-[180px] text-[clamp(120px,20vw,400px)]">
+     <h1 className="font-ivy font-normal w-full lg:max-w-[1797px] lg:mx-auto uppercase text-[#474747] opacity-[0.05] leading-[100%] md:pl-[20px] whitespace-nowrap mt-[120px] lg:mt-[150px] md:mt-[180px] text-[clamp(120px,20vw,400px)]">
   Lifebody
 </h1>
 
