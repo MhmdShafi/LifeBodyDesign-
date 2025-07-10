@@ -23,7 +23,7 @@ const Header = () => {
     flex flex-nowrap
     justify-center
     gap-[16px] sm:gap-[24px] md:gap-[32px]
-    w-full max-w-[1000px]
+    w-full max-w-[650px]
     mx-auto
     no-scrollbar
     whitespace-nowrap
@@ -61,14 +61,16 @@ const Header = () => {
     hover:border-[#E05F40]
     transition-all duration-300
     flex items-center justify-center
+    font-tt font-medium
   "
         >
           <span className="
-    font-tt font-medium w-[40px] h-[27px]
+     w-[40px] h-[27px]
     text-[#474747]
     transition-colors duration-300
     group-hover:text-[#E05F40]
     text-[18px]
+    font-tt font-medium
   ">
             Login
           </span>
