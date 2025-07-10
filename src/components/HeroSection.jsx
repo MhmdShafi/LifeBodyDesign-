@@ -11,7 +11,7 @@ const HeroSection = () => (
       md:h-[650px]       
       lg:h-[800px]      
       xl:h-[1010px]    
-      
+      bg-[#FAFAF5]
     "
   >
     {/* background – one layer, never repeats */}
